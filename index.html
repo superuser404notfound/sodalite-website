@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sodalite</title>
-    <meta name="description" content="Native Jellyfin client for Apple TV with built-in Seerr requests. Direct Play, real HDR10 / Dolby Vision, real Dolby Atmos.">
+    <meta name="description" content="Native tvOS client for Jellyfin with built-in Seerr requests. Direct Play, real HDR10 / Dolby Vision, real Dolby Atmos, Live TV, music. Open source, no telemetry.">
+    <meta property="og:title" content="Sodalite">
+    <meta property="og:description" content="Your Jellyfin library and Seerr, together on Apple TV. Native tvOS, instant playback, real HDR, real Dolby Atmos.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <aside class="rename-banner">
-            <strong>JellySeeTV is now Sodalite.</strong>
-            New TestFlight: <a href="https://testflight.apple.com/join/nWeQzmBX">testflight.apple.com/join/nWeQzmBX</a>.
-            If you joined the JellySeeTV beta, install Sodalite, open it once (your login carries over), then delete JellySeeTV.
-        </aside>
-
-        <header>
+        <header class="hero">
             <img src="logo.png" alt="Sodalite">
             <h1>Sodalite</h1>
             <p class="tagline">Your Jellyfin library and Seerr, together on Apple TV.</p>
+            <div class="cta">
+                <a class="btn btn-primary" href="https://testflight.apple.com/join/nWeQzmBX">Join the TestFlight beta</a>
+                <a class="btn btn-secondary" href="https://github.com/superuser404notfound/Sodalite">View on GitHub</a>
+            </div>
         </header>
 
         <nav>
@@ -27,15 +30,95 @@
             <a href="imprint.html">Impressum</a>
         </nav>
 
-        <p>Sodalite is a native tvOS media player for your Jellyfin server, with first-class Jellyseerr integration so you can browse and request what's missing without ever leaving the couch.</p>
+        <p class="lead">Sodalite is a native tvOS media player for your Jellyfin server, with first-class Seerr integration so you can browse and request what's missing without ever leaving the couch. Built on SwiftUI with a custom video engine underneath: Direct Play for almost every codec your Apple TV understands, real HDR and Dolby Atmos, Live TV, and your music library, all on the TV where you actually watch.</p>
 
-        <p>Built natively on SwiftUI, with a custom video engine handling Direct Play, HDR10, Dolby Vision and Dolby Atmos. No transcoding required for almost every codec your Apple TV understands.</p>
+        <section class="shots">
+            <a href="media/screenshot-home.jpg"><img src="media/screenshot-home.jpg" alt="Home: Continue Watching, Next Up and Favorites rows" loading="lazy"></a>
+            <a href="media/screenshot-catalog.jpg"><img src="media/screenshot-catalog.jpg" alt="Catalog: Seerr Discover with Trending and Upcoming Movies" loading="lazy"></a>
+            <a href="media/screenshot-search.jpg"><img src="media/screenshot-search.jpg" alt="Search: library results and matching catalog titles" loading="lazy"></a>
+            <a href="media/screenshot-settings.jpg"><img src="media/screenshot-settings.jpg" alt="Settings: profile, rows, playback and appearance" loading="lazy"></a>
+        </section>
 
-        <h3>Open source, end to end</h3>
-        <p>Sodalite is licensed under GPL-3.0, the underlying video engine AetherEngine under LGPL-3.0, both with an Apple Store / DRM Exception under §7 so the App Store distribution stays compatible. No telemetry, no analytics, no third-party SDKs phoning home. Self-host the server, audit the client.</p>
+        <h2>Two services, one remote</h2>
+        <p>Sodalite brings Jellyfin and Seerr together in the same UI. Watch what's already on your server, then spot something on a trending row that isn't there yet and request it from inside the app, while Seerr handles the rest. No switching to a phone, no web UI, no pinging your homelab admin. Single sign-on, one focus-driven interface, the full library plus request loop on Apple TV.</p>
 
-        <h3>Status</h3>
-        <p>Public TestFlight beta is open. Install via <a href="https://testflight.apple.com/join/nWeQzmBX">testflight.apple.com/join/nWeQzmBX</a> on any device signed in with your Apple ID, then open TestFlight on your Apple TV. App Store release follows. Source on <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a>.</p>
+        <h2>Everything it does</h2>
+        <div class="features">
+            <section class="card">
+                <h3>📚 Browse &amp; discover</h3>
+                <ul>
+                    <li>Multiple Jellyfin servers, switch without logging out</li>
+                    <li>Home rows you can reorder and toggle: Continue Watching, Next Up, per-library Latest, Playlists</li>
+                    <li>Movies, Series and Collections with instant filtering and All / Unwatched / Watched filters</li>
+                    <li>Search across your whole server, results as you type</li>
+                    <li>Rich detail pages: cast, ratings, where-to-watch, more-like-this and full filmographies</li>
+                    <li>Delete titles from the app, with optional Radarr / Sonarr cleanup via Seerr</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>🎬 Watch</h3>
+                <ul>
+                    <li>Direct Play for almost every codec: H.264, HEVC, AV1, VP9, MPEG-2, VC-1 and more, no transcoding</li>
+                    <li>Real HDR10, HDR10+, Dolby Vision and HLG with full metadata and automatic Match Content</li>
+                    <li>Dolby Atmos via EAC3+JOC, plus 5.1 / 7.1 surround with correct channel layout</li>
+                    <li>Client-side subtitles in every format, including styled ASS and bitmap PGS / DVD tracks</li>
+                    <li>Subtitle search &amp; download and dual subtitles, right from inside the player</li>
+                    <li>On-device scrub previews even without server trickplay, on a hand-built transport bar</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>📺 Live TV &amp; DVR</h3>
+                <ul>
+                    <li>Overview tab plus a full EPG guide with live now-line and channel favorites</li>
+                    <li>Timeshift: pause live TV and scrub back up to 10 minutes</li>
+                    <li>Recordings &amp; timers: record a single show or a whole series from the guide</li>
+                    <li>Most channels play straight from the source, seconds to start, with Jellyfin fallback</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>🎵 Listen</h3>
+                <ul>
+                    <li>Browse your Jellyfin music library by album</li>
+                    <li>Native tvOS Now Playing screen with cover art and scrubbing</li>
+                    <li>Same engine as video, played back without transcoding</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>📨 Request what's missing</h3>
+                <ul>
+                    <li>Browse trending and popular media right inside the app</li>
+                    <li>One-tap requests for movies and full series</li>
+                    <li>Track what's approved, declined or already downloading</li>
+                    <li>Admin view to approve, decline or edit any user's request</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>🌍 Personal</h3>
+                <ul>
+                    <li>Parental controls with a Guardian PIN to lock profiles and settings</li>
+                    <li>Watch Stats: totals, completion rate, top genres, most-rewatched titles</li>
+                    <li>26 languages, dark minimal design built for living rooms</li>
+                    <li>Appearance options plus an accent color with the Supporter Pack</li>
+                    <li>Liquid Glass accents on tvOS 26+, fully Siri Remote optimized</li>
+                </ul>
+            </section>
+        </div>
+
+        <h2>Open source, end to end</h2>
+        <p>Every byte that touches your server is in the open. Your auth tokens stay in the system Keychain, and there's no telemetry, no analytics, no third-party SDK phoning home. Sodalite is licensed under <strong>GPL-3.0</strong>, the underlying video engine <a href="https://github.com/superuser404notfound/AetherEngine">AetherEngine</a> under <strong>LGPL-3.0</strong>, both with an Apple Store / DRM Exception under §7 so App Store and TestFlight distribution stay legally clean. Self-host the server, self-build the client, the whole loop is yours.</p>
+
+        <h2>Status &amp; requirements</h2>
+        <p>The public TestFlight beta is open. Install via <a href="https://testflight.apple.com/join/nWeQzmBX">testflight.apple.com/join/nWeQzmBX</a> on any device signed in with your Apple ID, then open TestFlight on your Apple TV. App Store release follows. Source on <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a>.</p>
+        <ul>
+            <li><strong>Apple TV 4K</strong> (any generation), <strong>tvOS 26.0</strong> or later</li>
+            <li><strong>Jellyfin server</strong> 10.9+ recommended</li>
+            <li><strong>Seerr</strong> 2.0+ (optional, for browse &amp; request)</li>
+        </ul>
 
         <footer>
             <p>&copy; 2026 Vincent Herbst &middot; <a href="privacy.html">Privacy</a> &middot; <a href="imprint.html">Impressum</a> &middot; <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a></p>
