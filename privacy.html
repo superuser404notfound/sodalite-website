@@ -28,7 +28,7 @@
 
         <section id="en">
             <h2>English</h2>
-            <p class="muted">Last updated: 19 April 2026</p>
+            <p class="muted">Last updated: 26 September 2026</p>
 
             <h3>Summary</h3>
             <p>Sodalite is a self-hosted media player. It connects only to <strong>servers you choose</strong> (your Jellyfin server, optionally a Seerr instance). It contains <strong>no analytics, no telemetry, no advertising, and no third-party SDKs</strong>. The developer never sees, receives, or has access to any data about your usage.</p>
@@ -36,8 +36,9 @@
             <h3>What the app stores on your device</h3>
             <ul>
                 <li><strong>Server credentials</strong> (Jellyfin / Seerr URL, access token, session cookie, optionally your password) in the system <strong>Keychain</strong>. Used to keep you signed in across restarts.</li>
-                <li><strong>Playback preferences</strong> (preferred audio language, autoplay settings, etc.) in <strong>UserDefaults</strong>.</li>
+                <li><strong>Settings</strong> (playback, appearance, home rows, parental controls, etc.) in <strong>UserDefaults</strong>.</li>
                 <li><strong>Image cache</strong> (posters, backdrops downloaded from your Jellyfin server) in the app's local cache directory. Cleared by the system when storage is low or when you uninstall the app.</li>
+                <li><strong>Diagnostic log</strong> kept in memory and, only if you turn it on, in a local file. It never leaves the device unless you export or copy it yourself.</li>
             </ul>
 
             <h3>What the app sends over the network</h3>
@@ -48,6 +49,12 @@
                 <li>Image downloads from those same servers.</li>
             </ul>
             <p>No data is sent to the developer or any third party. There are no analytics endpoints, no crash reporting services, no advertising networks.</p>
+
+            <h3>iCloud sync</h3>
+            <p>If iCloud sync is on (it can be turned off in Settings), your <strong>servers, sign-in data and settings</strong> are stored in your <strong>private iCloud database</strong> so your other devices can use them. That database belongs to your Apple Account and is operated by Apple; the developer cannot read it.</p>
+
+            <h3>Purchases</h3>
+            <p>The optional Supporter Pack and tips are handled entirely by Apple through the App Store. The app only checks with Apple whether a purchase exists; the developer receives no personal data from it.</p>
 
             <h3>Third-party services</h3>
             <p>Sodalite does not use any third-party analytics, crash reporting, advertising, or tracking SDKs.</p>
@@ -60,14 +67,14 @@
             <p>If this policy ever changes, the updated version will appear at this URL and the App Store listing will reference the new revision date.</p>
 
             <h3>Contact</h3>
-            <p>Questions? Open an issue on <a href="https://github.com/superuser404notfound/Sodalite/issues">GitHub</a>.</p>
+            <p>Controller: Vincent Herbst, reachable via the <a href="imprint.html">imprint</a>. Questions? Open an issue on <a href="https://github.com/superuser404notfound/Sodalite/issues">GitHub</a>.</p>
         </section>
 
         <hr>
 
         <section id="de">
             <h2>Deutsch</h2>
-            <p class="muted">Zuletzt aktualisiert: 19. April 2026</p>
+            <p class="muted">Zuletzt aktualisiert: 26. September 2026</p>
 
             <h3>Zusammenfassung</h3>
             <p>Sodalite ist ein selbstgehosteter Media-Player. Die App verbindet sich ausschließlich mit <strong>Servern, die du selbst auswählst</strong> (deinem Jellyfin-Server, optional einer Seerr-Instanz). Sie enthält <strong>keine Analytik, keine Telemetrie, keine Werbung und keine Drittanbieter-SDKs</strong>. Der Entwickler sieht, erhält oder hat keinen Zugriff auf irgendwelche Daten über deine Nutzung.</p>
@@ -75,8 +82,9 @@
             <h3>Was die App lokal auf deinem Gerät speichert</h3>
             <ul>
                 <li><strong>Server-Anmeldedaten</strong> (Jellyfin/Seerr-URL, Access-Token, Session-Cookie, optional dein Passwort) im System-<strong>Keychain</strong>. Damit bleibst du nach einem Neustart eingeloggt.</li>
-                <li><strong>Wiedergabe-Einstellungen</strong> (bevorzugte Audio-Sprache, Autoplay, etc.) in den <strong>UserDefaults</strong>.</li>
+                <li><strong>Einstellungen</strong> (Wiedergabe, Darstellung, Startseiten-Reihen, Kindersicherung usw.) in den <strong>UserDefaults</strong>.</li>
                 <li><strong>Bild-Cache</strong> (Poster und Backdrops, die von deinem Jellyfin-Server geladen wurden) im lokalen Cache-Verzeichnis der App. Wird vom System bei knappem Speicher geleert oder beim Deinstallieren der App.</li>
+                <li><strong>Diagnoseprotokoll</strong> im Arbeitsspeicher und, nur wenn du es einschaltest, in einer lokalen Datei. Es verlässt das Gerät nur, wenn du es selbst exportierst oder kopierst.</li>
             </ul>
 
             <h3>Was die App über das Netzwerk sendet</h3>
@@ -87,6 +95,12 @@
                 <li>Bild-Downloads von eben diesen Servern.</li>
             </ul>
             <p>Es werden keine Daten an den Entwickler oder Dritte gesendet. Es gibt keine Analytik-Endpoints, keine Crash-Reporting-Dienste, keine Werbenetzwerke.</p>
+
+            <h3>iCloud-Sync</h3>
+            <p>Ist der iCloud-Sync an (in den Einstellungen abschaltbar), werden deine <strong>Server, Anmeldedaten und Einstellungen</strong> in deiner <strong>privaten iCloud-Datenbank</strong> gespeichert, damit deine anderen Geräte sie nutzen können. Diese Datenbank gehört zu deinem Apple Account und wird von Apple betrieben; der Entwickler kann sie nicht lesen.</p>
+
+            <h3>Käufe</h3>
+            <p>Das optionale Supporter Pack und Trinkgelder wickelt vollständig Apple über den App Store ab. Die App fragt bei Apple nur ab, ob ein Kauf besteht; der Entwickler erhält daraus keine personenbezogenen Daten.</p>
 
             <h3>Drittanbieter-Dienste</h3>
             <p>Sodalite nutzt keine Drittanbieter-SDKs für Analytik, Crash-Reporting, Werbung oder Tracking.</p>
@@ -99,7 +113,7 @@
             <p>Sollte sich diese Erklärung jemals ändern, wird die aktualisierte Version unter dieser URL erscheinen und das App-Store-Listing wird auf das neue Änderungsdatum verweisen.</p>
 
             <h3>Kontakt</h3>
-            <p>Fragen? Öffne ein Issue auf <a href="https://github.com/superuser404notfound/Sodalite/issues">GitHub</a>.</p>
+            <p>Verantwortlicher: Vincent Herbst, erreichbar über das <a href="imprint.html">Impressum</a>. Fragen? Öffne ein Issue auf <a href="https://github.com/superuser404notfound/Sodalite/issues">GitHub</a>.</p>
         </section>
 
         <footer>
