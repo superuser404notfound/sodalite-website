@@ -117,6 +117,30 @@ p.lead {
     transition: border-color 0.2s, transform 0.2s;
 }
 
+.shots .wide {
+    grid-column: 1 / -1;
+}
+
+.shots-mobile {
+    grid-template-columns: 19fr 19fr 31fr 31fr;
+    align-items: end;
+}
+
+.store-badge {
+    display: inline-flex;
+    line-height: 0;
+    transition: opacity 0.2s;
+}
+
+.store-badge img {
+    height: 47px;
+    width: auto;
+}
+
+.store-badge:hover {
+    opacity: 0.85;
+}
+
 .shots a:hover img {
     border-color: var(--fg-muted);
     transform: translateY(-2px);
@@ -155,6 +179,10 @@ p.lead {
     .shots,
     .features {
         grid-template-columns: 1fr;
+    }
+
+    .shots-mobile {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
