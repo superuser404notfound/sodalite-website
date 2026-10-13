@@ -60,9 +60,9 @@ p.lead {
 
 .cta {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
     margin-top: 28px;
 }
 
@@ -127,14 +127,21 @@ p.lead {
 }
 
 .store-badge {
-    display: inline-flex;
+    display: block;
     line-height: 0;
     transition: opacity 0.2s;
 }
 
 .store-badge img {
-    height: 47px;
+    display: block;
+    height: 64px;
     width: auto;
+}
+
+.cta .btn-secondary {
+    width: 192px;
+    text-align: center;
+    border-color: var(--border);
 }
 
 .store-badge:hover {
