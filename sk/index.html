@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sodalite: Jellyfin pre Apple TV, iPhone, iPad a Mac</title>
+<meta name="description" content="Bezplatná natívna aplikácia Jellyfin pre Apple TV, iPhone, iPad a Mac so zabudovanými žiadosťami cez Seerr. Direct Play, Dolby Vision, Dolby Atmos, bezstratové výškové kanály, živá TV a hudba. Open source, bez sledovania.">
+<link rel="canonical" href="https://sodalite.superuser404.de/sk/">
+<link rel="alternate" hreflang="en" href="https://sodalite.superuser404.de/">
+<link rel="alternate" hreflang="cs" href="https://sodalite.superuser404.de/cs/">
+<link rel="alternate" hreflang="da" href="https://sodalite.superuser404.de/da/">
+<link rel="alternate" hreflang="de" href="https://sodalite.superuser404.de/de/">
+<link rel="alternate" hreflang="el" href="https://sodalite.superuser404.de/el/">
+<link rel="alternate" hreflang="es" href="https://sodalite.superuser404.de/es/">
+<link rel="alternate" hreflang="fi" href="https://sodalite.superuser404.de/fi/">
+<link rel="alternate" hreflang="fr" href="https://sodalite.superuser404.de/fr/">
+<link rel="alternate" hreflang="hr" href="https://sodalite.superuser404.de/hr/">
+<link rel="alternate" hreflang="hu" href="https://sodalite.superuser404.de/hu/">
+<link rel="alternate" hreflang="it" href="https://sodalite.superuser404.de/it/">
+<link rel="alternate" hreflang="ja" href="https://sodalite.superuser404.de/ja/">
+<link rel="alternate" hreflang="ko" href="https://sodalite.superuser404.de/ko/">
+<link rel="alternate" hreflang="nb" href="https://sodalite.superuser404.de/nb/">
+<link rel="alternate" hreflang="nl" href="https://sodalite.superuser404.de/nl/">
+<link rel="alternate" hreflang="pl" href="https://sodalite.superuser404.de/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://sodalite.superuser404.de/pt-br/">
+<link rel="alternate" hreflang="pt-PT" href="https://sodalite.superuser404.de/pt-pt/">
+<link rel="alternate" hreflang="ro" href="https://sodalite.superuser404.de/ro/">
+<link rel="alternate" hreflang="ru" href="https://sodalite.superuser404.de/ru/">
+<link rel="alternate" hreflang="sk" href="https://sodalite.superuser404.de/sk/">
+<link rel="alternate" hreflang="sv" href="https://sodalite.superuser404.de/sv/">
+<link rel="alternate" hreflang="tr" href="https://sodalite.superuser404.de/tr/">
+<link rel="alternate" hreflang="uk" href="https://sodalite.superuser404.de/uk/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sodalite.superuser404.de/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sodalite.superuser404.de/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://sodalite.superuser404.de/">
+<meta property="og:title" content="Sodalite: Jellyfin pre Apple TV, iPhone, iPad a Mac">
+<meta property="og:description" content="Bezplatná natívna aplikácia Jellyfin pre Apple TV, iPhone, iPad a Mac so zabudovanými žiadosťami cez Seerr. Direct Play, Dolby Vision, Dolby Atmos, bezstratové výškové kanály, živá TV a hudba. Open source, bez sledovania.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sodalite.superuser404.de/sk/">
+<meta property="og:image" content="https://sodalite.superuser404.de/media/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070b1f">
+<meta name="apple-itunes-app" content="app-id=6764418563">
+<link rel="icon" href="/media/icon-64.png">
+<link rel="apple-touch-icon" href="/media/icon-180.png">
+<link rel="stylesheet" href="/style.css?v=1b78c2cf">
+
+</head>
+<body>
+<a class="skip" href="#main">Preskočiť na obsah</a>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="/sk/"><img src="/media/icon-64.png" alt="" width="32" height="32"><span>Sodalite</span></a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#tour">Prehliadka</a>
+      <a href="#features">Funkcie</a>
+      <a href="#yours">Podľa seba</a>
+      <a href="#engine">Obraz a zvuk</a>
+      <a href="#community">Komunita</a>
+    </nav>
+    <details class="lang">
+      <summary aria-label="Jazyk"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-2.9a15.7 15.7 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8ZM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4ZM4.3 14a8.2 8.2 0 0 1 0-4h3.3a16.5 16.5 0 0 0 0 4H4.3Zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 0 1 5.1 16ZM8 8H5.1a8 8 0 0 1 4.3-3.6C8.8 5.5 8.4 6.7 8 8Zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4Zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4Zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 0 1-4.3 3.6Zm1.8-5.6a16.5 16.5 0 0 0 0-4h3.3a8.2 8.2 0 0 1 0 4h-3.3Z"/></svg><span>Slovenčina</span></summary>
+      <ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/cs/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/el/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fi/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/hr/" hreflang="hr" lang="hr">Hrvatski</a></li><li><a href="/hu/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/nb/" hreflang="nb" lang="nb">Norsk bokmål</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT">Português (Portugal)</a></li><li><a href="/ro/" hreflang="ro" lang="ro">Română</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/sk/" hreflang="sk" lang="sk" aria-current="page">Slovenčina</a></li><li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/uk/" hreflang="uk" lang="uk">Українська</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul>
+    </details>
+    <a class="btn btn-small" href="https://apps.apple.com/app/sodalite/id6764418563">App Store</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <img class="hero-icon" src="/media/icon-180.png" alt="" width="96" height="96">
+    <p class="kicker">Pre Jellyfin a Seerr</p>
+    <h1>Tvoj Jellyfin <em>v najlepšej forme</em>.</h1>
+    <p class="lead">Sodalite prehráva tvoju knižnicu Jellyfin na Apple TV, iPhone, iPade a Macu. Natívne, rýchlo a v kvalite obrazu a zvuku, v akej tvoje súbory vznikli. Čo chýba, si vyžiadaš cez Seerr bez opustenia aplikácie.</p>
+    <div class="cta">
+      <a class="store" href="https://apps.apple.com/app/sodalite/id6764418563"><img src="/media/app-store-badge.svg" alt="Stiahnuť v App Store" width="180" height="60"></a>
+    </div>
+    <p class="fine">Zadarmo. Jedno stiahnutie pre všetky tvoje zariadenia Apple.</p>
+    <p class="fine">Chceš nové verzie skôr? <a href="https://testflight.apple.com/join/nWeQzmBX">Pridaj sa k bete v TestFlight</a>.</p>
+  </div>
+  <div class="wrap hero-shot">
+    <img src="/media/ui/tvos-home.webp" alt="Domovská obrazovka Sodalite na Apple TV" width="1400" height="788" fetchpriority="high">
+  </div>
+</section>
+
+<section id="tour" class="section">
+  <div class="wrap">
+    <h2>Pozri sa na každú obrazovku</h2>
+    <p class="lead">Jedna aplikácia s rovnakou knižnicou, rovnakým vzhľadom a rovnakým prehrávačom, od televízora v obývačke po telefón v tvojej ruke.</p>
+  </div>
+  <div class="tour">
+    <input type="radio" name="platform" id="p-tv" checked>
+    <input type="radio" name="platform" id="p-iphone">
+    <input type="radio" name="platform" id="p-ipad">
+    <input type="radio" name="platform" id="p-mac">
+    <div class="wrap">
+      <div class="tabs" role="tablist">
+        <label for="p-tv">Apple TV</label>
+        <label for="p-iphone">iPhone</label>
+        <label for="p-ipad">iPad</label>
+        <label for="p-mac">Mac</label>
+      </div>
+    </div>
+    <div class="strip strip-tv" data-platform="tv"><img src="/media/shots/sk/tv-1.webp" alt="Sodalite na zariadení Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/sk/tv-2.webp" alt="Sodalite na zariadení Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/sk/tv-3.webp" alt="Sodalite na zariadení Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/sk/tv-4.webp" alt="Sodalite na zariadení Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/sk/tv-5.webp" alt="Sodalite na zariadení Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/sk/tv-6.webp" alt="Sodalite na zariadení Apple TV" width="1400" height="788" loading="lazy"></div>
+    <div class="strip strip-iphone" data-platform="iphone"><img src="/media/shots/sk/iphone-1.webp" alt="Sodalite na zariadení iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/sk/iphone-2.webp" alt="Sodalite na zariadení iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/sk/iphone-3.webp" alt="Sodalite na zariadení iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/sk/iphone-4.webp" alt="Sodalite na zariadení iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/sk/iphone-5.webp" alt="Sodalite na zariadení iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/sk/iphone-6.webp" alt="Sodalite na zariadení iPhone" width="480" height="1043" loading="lazy"></div>
+    <div class="strip strip-ipad" data-platform="ipad"><img src="/media/shots/sk/ipad-1.webp" alt="Sodalite na zariadení iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/sk/ipad-2.webp" alt="Sodalite na zariadení iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/sk/ipad-3.webp" alt="Sodalite na zariadení iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/sk/ipad-4.webp" alt="Sodalite na zariadení iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/sk/ipad-5.webp" alt="Sodalite na zariadení iPad" width="1000" height="750" loading="lazy"></div>
+    <div class="strip strip-mac" data-platform="mac"><img src="/media/shots/sk/mac-1.webp" alt="Sodalite na zariadení Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/sk/mac-2.webp" alt="Sodalite na zariadení Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/sk/mac-3.webp" alt="Sodalite na zariadení Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/sk/mac-4.webp" alt="Sodalite na zariadení Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/sk/mac-5.webp" alt="Sodalite na zariadení Mac" width="1200" height="750" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="wrap">
+    <h2>Všetko z tvojho servera, a ešte viac</h2>
+    <p class="lead">Sodalite komunikuje priamo s tvojím serverom Jellyfin. Toto dostaneš.</p>
+
+    <div class="feature">
+      <img src="/media/ui/ipad-home.webp" alt="" loading="lazy" width="1000" height="750">
+      <div><h3>Domov podľa teba</h3><p>Pokračovať v sledovaní, Ďalšie, najnovšie prírastky, obľúbené, kolekcie a playlisty. Každý riadok môžeš zobraziť, skryť a presunúť. Máš viac serverov? Domov ich spojí až päť do jedného.</p></div>
+    </div>
+    <div class="feature flip">
+      <img src="/media/ui/tvos-detail.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Stránky s detailmi, ktoré stojí za to čítať</h3><p>Obrázky na prvom mieste, dej hneď na prvej obrazovke, hodnotenia z TMDB, IMDb a Rotten Tomatoes, odznaky formátov ako 4K, Dolby Vision a Atmos, herci s kompletnou filmografiou a každá verzia titulu na výber.</p></div>
+    </div>
+    <div class="feature">
+      <img src="/media/ui/tvos-player.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Prehrávač stvorený pre ovládač</h3><p>Presné náhľady po snímkach pri pretáčaní, Preskočiť úvod a Preskočiť zhrnutie, ďalšia časť s odpočtom, rýchle pretáčanie až 256x, Obraz v obraze a titulky v každom formáte vrátane štylizovaných ASS a Blu-ray PGS. Vyhľadaj a stiahni chýbajúce titulky alebo zobraz dvoje naraz.</p></div>
+    </div>
+    <div class="feature flip">
+      <img src="/media/ui/tvos-livetv.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Živá TV a nahrávky</h3><p>Skutočný televízny program s obľúbenými a kategóriami. Pozastav a pretoč živé vysielanie, prepínaj kanály ovládačom, nahraj reláciu alebo celý seriál a pozeraj nahrávky, kým ešte bežia.</p></div>
+    </div>
+    <div class="feature">
+      <img src="/media/ui/tvos-catalog.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Vyžiadaj si, čo chýba</h3><p>Prechádzaj populárne a pripravované filmy a seriály cez Seerr. Vyžiadaj si film, celý seriál alebo jednotlivé série, sleduj stav a schvaľuj žiadosti, ak si správca. Jedno prihlásenie pre oboje.</p></div>
+    </div>
+
+    <div class="cards">
+      <article class="card"><img src="/media/ui/tvos-multiview.webp" alt="" loading="lazy" width="1400" height="788"><h3>Multiview</h3><p>Pozeraj až štyri živé kanály naraz na Apple TV. Zvuk ide z dlaždice, ktorú vyberieš, a jedno kliknutie ju zobrazí na celú obrazovku.</p></article>
+      <article class="card"><img class="phone" src="/media/ui/iphone-detail.webp" alt="" loading="lazy" width="480" height="1043"><h3>Na cestách</h3><p>Na iPhone a iPade: stiahni si filmy a celé série na pozeranie offline, pošli titul do televízora cez AirPlay alebo pripoj HDMI adaptér. Zámok otáčania a detský zámok sú priamo v prehrávači.</p></article>
+      <article class="card" data-platform="mac"><img src="/media/ui/mac-home.webp" alt="" loading="lazy" width="1200" height="750"><h3>Natívne na Macu</h3><p>Skutočná aplikácia pre Mac, nie port: bočný panel, prehrávač vo vlastnom okne, plné ovládanie klávesnicou, celá obrazovka a kontextové menu po kliknutí pravým tlačidlom.</p></article>
+      <article class="card text-card"><h3>Aj tvoja hudba</h3><p>Prechádzaj hudbu v Jellyfine podľa albumov a počúvaj ju s poriadnou obrazovkou Práve hrá, obalmi albumov, pretáčaním a prehrávaním na pozadí.</p></article>
+      <article class="card text-card"><h3>Zabudovaný Trakt</h3><p>Pripoj Trakt pomocou kódu. Čo pozeráš, sa zaznamená, stav pozretia a hodnotenia sa synchronizujú oboma smermi a tvoj watchlist a zoznamy sa stanú riadkami na domovskej obrazovke. Bez pluginu na serveri.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="yours" class="section alt">
+  <div class="wrap">
+    <h2>Prispôsob si ho</h2>
+    <p class="lead">Sodalite má nastavenie takmer na všetko a každý profil si drží vlastné.</p>
+    <div class="settings-strip"><figure><img src="/media/ui/tvos-settings-accent.webp" alt="Nastavenia Sodalite na Apple TV: Farba zvýraznenia" width="1400" height="788" loading="lazy"><figcaption>Farba zvýraznenia</figcaption></figure><figure><img src="/media/ui/tvos-settings-appearance.webp" alt="Nastavenia Sodalite na Apple TV: Vzhľad" width="1400" height="788" loading="lazy"><figcaption>Vzhľad</figcaption></figure><figure><img src="/media/ui/tvos-settings-home.webp" alt="Nastavenia Sodalite na Apple TV: Prispôsobiť domov" width="1400" height="788" loading="lazy"><figcaption>Prispôsobiť domov</figcaption></figure><figure><img src="/media/ui/tvos-settings-controls.webp" alt="Nastavenia Sodalite na Apple TV: Ovládacie prvky prehrávača" width="1400" height="788" loading="lazy"><figcaption>Ovládacie prvky prehrávača</figcaption></figure><figure><img src="/media/ui/tvos-settings-playback.webp" alt="Nastavenia Sodalite na Apple TV: Nastavenia prehrávania" width="1400" height="788" loading="lazy"><figcaption>Nastavenia prehrávania</figcaption></figure><figure><img src="/media/ui/tvos-settings-tabs.webp" alt="Nastavenia Sodalite na Apple TV: Karty" width="1400" height="788" loading="lazy"><figcaption>Karty</figcaption></figure></div>
+    <div class="grid">
+      <div><h3>Farby a pozadia</h3><p>Vyber si farbu zvýraznenia a pozadie Grafitové sklo alebo OLED čierna. Zvoľ veľkosť kariet, štýl obrázkov, logá titulov a odznaky, ktoré chceš vidieť.</p></div>
+      <div><h3>Panel kariet alebo bočný panel</h3><p>Na Apple TV sa pohybuj cez lištu hore alebo cez bočný panel vo farbe zvýraznenia. Vyber, ktoré karty sa zobrazia, a pripni knižnicu, napríklad Filmy, ako samostatnú kartu.</p></div>
+      <div><h3>Tvoje riadky na domovskej obrazovke</h3><p>Zapínaj a vypínaj riadky, zoraď ich podľa seba a pridaj Nedávno vydané, nadchádzajúce epizódy, tvoje obľúbené epizódy alebo riadok Najnovšie pre každú knižnicu.</p></div>
+      <div><h3>Tvoje tlačidlá prehrávača</h3><p>Skry tlačidlá prehrávača, ktoré nikdy nepoužívaš, a zvyšok zoraď podľa seba. Nastav interval preskočenia pre každý smer a zapni Štatistiky pre nerdov, keď chceš detaily.</p></div>
+      <div><h3>Zvuk pre každú miestnosť</h3><p>Zvýraznenie dialógov robí hlasy zrozumiteľnejšími, Nočný režim v noci stlmí hlasné scény a nastavenie reproduktorov zmixuje priestorový zvuk do sterea alebo 5.1.</p></div>
+      <div><h3>Titulky podľa teba</h3><p>Písmo, veľkosť, poloha a štýl. Vynútené titulky sa zobrazia samy a tvoj výber stopy sa zapamätá pre každý film a seriál.</p></div>
+      <div><h3>Profily a rodičovská kontrola</h3><p>Prepínaj profily bez hesla, každý s vlastnými nastaveniami. Rodičovský PIN zamkne profily a nastavenia a ochrana pred spoilermi rozmaže epizódy, ktoré si ešte nevidel.</p></div>
+      <div><h3>Synchronizácia iCloud</h3><p>Servery, prihlásenia a nastavenia ťa nasledujú na každé zariadenie s tvojím účtom iCloud, s koncovým šifrovaním.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="engine" class="section engine">
+  <div class="wrap">
+    <p class="kicker">Poháňa ho AetherEngine</p>
+    <h2>Obraz a zvuk, <em>ako boli zmasterované</em>.</h2>
+    <p class="lead">Pod Sodalitom beží AetherEngine, náš vlastný open source video engine. Prehráva tvoje súbory tak, ako sú, takže ich server nemusí konvertovať, a zachová to, čo iné aplikácie zahodia.</p>
+    <div class="grid">
+      <div><h3>Prehrá takmer všetko</h3><p>HEVC, H.264, AV1, VP9, MPEG-2, VC-1 a staré súbory DivX a WMV v MKV, MP4, AVI, TS a ďalších, dokonca aj priečinky DVD a Blu-ray. Prehrávané priamo, bez transkódovania na tvojom serveri.</p></div>
+      <div><h3>Skutočné HDR</h3><p>HDR10, HDR10+, Dolby Vision a HLG s kompletnými metadátami. Apple TV sama prepne televízor do zodpovedajúceho režimu.</p></div>
+      <div class="hl"><h3>Aj Dolby Vision Profile 7</h3><p>Blu-ray remuxy s Dolby Vision Profile 7 vrátane FEL sa priamo v zariadení skonvertujú na Profile 8.1, takže tvoj televízor stále zobrazuje Dolby Vision. Pri FEL sa jas rozširujúcej vrstvy zapracuje scénu po scéne, vďaka čomu je obraz oveľa bližšie k disku.</p></div>
+      <div><h3>Dolby Atmos</h3><p>Dolby Atmos zo stôp Dolby Digital Plus rozsvieti na tvojom receiveri nápis Atmos a v AirPods hrá ako priestorový zvuk.</p></div>
+      <div class="hl"><h3>Bezstratové výškové kanály</h3><p>Apple TV nedokáže poslať TrueHD ani DTS:X ďalej do receivera, preto sa ich výškové kanály zvyčajne stratia. AetherEngine ich zachová: vykreslí stopu do mixu 9.1.6 a pošle ho do receivera cez HDMI bez stratovej kompresie.</p></div>
+      <div><h3>Každé titulky</h3><p>Textové aj obrázkové titulky sa vykresľujú v zariadení: SRT, štylizované ASS, WebVTT, Blu-ray PGS, DVD, DVB a teletext. Tvoj server ich nemusí vpaľovať do obrazu.</p></div>
+    </div>
+    <p class="more"><a href="https://aetherengine.superuser404.de">Viac o AetherEngine &rarr;</a></p>
+  </div>
+</section>
+
+<section id="platforms" class="section">
+  <div class="wrap">
+    <h2>Beží na</h2>
+    <p class="lead">Jedno bezplatné stiahnutie pokryje všetky štyri. Tvoje servery a nastavenia sa medzi nimi synchronizujú cez iCloud.</p>
+    <ul class="platforms">
+      <li><strong>Apple TV</strong><span>Apple TV 4K so systémom tvOS 26 alebo novším</span></li>
+      <li><strong>iPhone</strong><span>iOS 26 alebo novší</span></li>
+      <li><strong>iPad</strong><span>iPadOS 26 alebo novší</span></li>
+      <li><strong>Mac</strong><span>macOS 26 alebo novší</span></li>
+    </ul>
+    <p class="fine center">Potrebuješ server Jellyfin. Seerr je voliteľný.</p>
+  </div>
+</section>
+
+<section id="community" class="section alt">
+  <div class="wrap">
+    <h2>Open source a vyvíjaný otvorene</h2>
+    <p class="lead">Sodalite je zadarmo a jeho zdrojový kód je verejne na GitHube. Žiadne reklamy, žiadne sledovanie, žiadna analytika. Tvoje prihlásenia zostávajú v tvojich zariadeniach a v tvojom vlastnom iCloude.</p>
+    <div class="cards three">
+      <article class="card text-card"><h3>Našiel si chybu alebo ti chýba funkcia?</h3><p>Napíš nám na GitHub. Každé hlásenie si prečítame a mnohé funkcie Sodalite začali ako žiadosť.</p><a class="btn" href="https://github.com/superuser404notfound/Sodalite/issues/new/choose">Nahlásiť chybu alebo navrhnúť funkciu</a></article>
+      <article class="card text-card"><h3>Otázky a novinky</h3><p>Pridaj sa na Discord pre rýchle otázky, tipy a novinky o vydaniach.</p><a class="btn btn-ghost" href="https://discord.gg/P7NvpzNqnG">Pridať sa na Discord</a></article>
+      <article class="card text-card"><h3>Prečítaj si kód</h3><p>Sodalite je pod licenciou GPL-3.0, AetherEngine pod LGPL-3.0. Študuj ho, zostav si ho sám alebo ho pomôž zlepšiť.</p><a class="btn btn-ghost" href="https://github.com/superuser404notfound/Sodalite">Sodalite na GitHube</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section final">
+  <div class="wrap">
+    <img src="/media/icon-180.png" alt="" width="80" height="80" loading="lazy">
+    <h2>Pripravený pozerať?</h2>
+    <p class="lead">Stiahni si Sodalite zadarmo v App Store.</p>
+    <a class="store" href="https://apps.apple.com/app/sodalite/id6764418563"><img src="/media/app-store-badge.svg" alt="Stiahnuť v App Store" width="180" height="60" loading="lazy"></a>
+    <p class="fine">Chceš nové verzie skôr? <a href="https://testflight.apple.com/join/nWeQzmBX">Pridaj sa k bete v TestFlight</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <nav>
+      <a href="/privacy">Súkromie</a>
+      <a href="/imprint.html">Impresum</a>
+      <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a>
+      <a href="https://discord.gg/P7NvpzNqnG">Discord</a>
+    </nav>
+    <p>Sodalite nie je pridružený k Jellyfin, Seerr ani Trakt a nie je nimi podporovaný. Apple TV, iPhone, iPad a Mac sú ochranné známky spoločnosti Apple Inc. Dolby, Dolby Vision a Dolby Atmos sú ochranné známky spoločnosti Dolby Laboratories.</p>
+    <p>&copy; 2026 Vincent Herbst</p>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.lang a[hreflang]').forEach(function (a) {
+  a.addEventListener('click', function () { try { localStorage.setItem('lang', a.getAttribute('hreflang')); } catch (e) {} });
+});
+</script>
+</body>
+</html>

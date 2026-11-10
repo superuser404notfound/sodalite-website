@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sodalite: Jellyfin für Apple TV, iPhone, iPad und Mac</title>
+<meta name="description" content="Eine kostenlose, native Jellyfin-App für Apple TV, iPhone, iPad und Mac, mit Seerr-Anfragen direkt eingebaut. Direct Play, Dolby Vision, Dolby Atmos, verlustfreie Höhenkanäle, Live-TV und Musik. Open Source, kein Tracking.">
+<link rel="canonical" href="https://sodalite.superuser404.de/de/">
+<link rel="alternate" hreflang="en" href="https://sodalite.superuser404.de/">
+<link rel="alternate" hreflang="cs" href="https://sodalite.superuser404.de/cs/">
+<link rel="alternate" hreflang="da" href="https://sodalite.superuser404.de/da/">
+<link rel="alternate" hreflang="de" href="https://sodalite.superuser404.de/de/">
+<link rel="alternate" hreflang="el" href="https://sodalite.superuser404.de/el/">
+<link rel="alternate" hreflang="es" href="https://sodalite.superuser404.de/es/">
+<link rel="alternate" hreflang="fi" href="https://sodalite.superuser404.de/fi/">
+<link rel="alternate" hreflang="fr" href="https://sodalite.superuser404.de/fr/">
+<link rel="alternate" hreflang="hr" href="https://sodalite.superuser404.de/hr/">
+<link rel="alternate" hreflang="hu" href="https://sodalite.superuser404.de/hu/">
+<link rel="alternate" hreflang="it" href="https://sodalite.superuser404.de/it/">
+<link rel="alternate" hreflang="ja" href="https://sodalite.superuser404.de/ja/">
+<link rel="alternate" hreflang="ko" href="https://sodalite.superuser404.de/ko/">
+<link rel="alternate" hreflang="nb" href="https://sodalite.superuser404.de/nb/">
+<link rel="alternate" hreflang="nl" href="https://sodalite.superuser404.de/nl/">
+<link rel="alternate" hreflang="pl" href="https://sodalite.superuser404.de/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://sodalite.superuser404.de/pt-br/">
+<link rel="alternate" hreflang="pt-PT" href="https://sodalite.superuser404.de/pt-pt/">
+<link rel="alternate" hreflang="ro" href="https://sodalite.superuser404.de/ro/">
+<link rel="alternate" hreflang="ru" href="https://sodalite.superuser404.de/ru/">
+<link rel="alternate" hreflang="sk" href="https://sodalite.superuser404.de/sk/">
+<link rel="alternate" hreflang="sv" href="https://sodalite.superuser404.de/sv/">
+<link rel="alternate" hreflang="tr" href="https://sodalite.superuser404.de/tr/">
+<link rel="alternate" hreflang="uk" href="https://sodalite.superuser404.de/uk/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sodalite.superuser404.de/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sodalite.superuser404.de/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://sodalite.superuser404.de/">
+<meta property="og:title" content="Sodalite: Jellyfin für Apple TV, iPhone, iPad und Mac">
+<meta property="og:description" content="Eine kostenlose, native Jellyfin-App für Apple TV, iPhone, iPad und Mac, mit Seerr-Anfragen direkt eingebaut. Direct Play, Dolby Vision, Dolby Atmos, verlustfreie Höhenkanäle, Live-TV und Musik. Open Source, kein Tracking.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sodalite.superuser404.de/de/">
+<meta property="og:image" content="https://sodalite.superuser404.de/media/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070b1f">
+<meta name="apple-itunes-app" content="app-id=6764418563">
+<link rel="icon" href="/media/icon-64.png">
+<link rel="apple-touch-icon" href="/media/icon-180.png">
+<link rel="stylesheet" href="/style.css?v=1b78c2cf">
+
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="/de/"><img src="/media/icon-64.png" alt="" width="32" height="32"><span>Sodalite</span></a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#tour">Rundgang</a>
+      <a href="#features">Funktionen</a>
+      <a href="#yours">Ganz deins</a>
+      <a href="#engine">Bild & Ton</a>
+      <a href="#community">Community</a>
+    </nav>
+    <details class="lang">
+      <summary aria-label="Sprache"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-2.9a15.7 15.7 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8ZM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4ZM4.3 14a8.2 8.2 0 0 1 0-4h3.3a16.5 16.5 0 0 0 0 4H4.3Zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 0 1 5.1 16ZM8 8H5.1a8 8 0 0 1 4.3-3.6C8.8 5.5 8.4 6.7 8 8Zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4Zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4Zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 0 1-4.3 3.6Zm1.8-5.6a16.5 16.5 0 0 0 0-4h3.3a8.2 8.2 0 0 1 0 4h-3.3Z"/></svg><span>Deutsch</span></summary>
+      <ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/cs/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/de/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="/el/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fi/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/hr/" hreflang="hr" lang="hr">Hrvatski</a></li><li><a href="/hu/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/nb/" hreflang="nb" lang="nb">Norsk bokmål</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT">Português (Portugal)</a></li><li><a href="/ro/" hreflang="ro" lang="ro">Română</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/sk/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/uk/" hreflang="uk" lang="uk">Українська</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul>
+    </details>
+    <a class="btn btn-small" href="https://apps.apple.com/app/sodalite/id6764418563">App Store</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <img class="hero-icon" src="/media/icon-180.png" alt="" width="96" height="96">
+    <p class="kicker">Für Jellyfin und Seerr</p>
+    <h1>Dein Jellyfin, <em>von seiner besten Seite</em>.</h1>
+    <p class="lead">Sodalite spielt deine Jellyfin-Mediathek auf Apple TV, iPhone, iPad und Mac ab. Nativ, schnell und in der Bild- und Tonqualität, in der deine Dateien gemacht wurden. Was fehlt, forderst du über Seerr an, ohne die App zu verlassen.</p>
+    <div class="cta">
+      <a class="store" href="https://apps.apple.com/app/sodalite/id6764418563"><img src="/media/app-store-badge.svg" alt="Laden im App Store" width="180" height="60"></a>
+    </div>
+    <p class="fine">Kostenlos. Ein Download für alle deine Apple-Geräte.</p>
+    <p class="fine">Neue Versionen früher ausprobieren? <a href="https://testflight.apple.com/join/nWeQzmBX">Mach bei der TestFlight-Beta mit</a>.</p>
+  </div>
+  <div class="wrap hero-shot">
+    <img src="/media/ui/tvos-home.webp" alt="Sodalite-Startseite auf dem Apple TV" width="1400" height="788" fetchpriority="high">
+  </div>
+</section>
+
+<section id="tour" class="section">
+  <div class="wrap">
+    <h2>Auf jedem Bildschirm zu Hause</h2>
+    <p class="lead">Eine App mit derselben Mediathek, demselben Look und demselben Player, vom Fernseher im Wohnzimmer bis zum Handy in deiner Hand.</p>
+  </div>
+  <div class="tour">
+    <input type="radio" name="platform" id="p-tv" checked>
+    <input type="radio" name="platform" id="p-iphone">
+    <input type="radio" name="platform" id="p-ipad">
+    <input type="radio" name="platform" id="p-mac">
+    <div class="wrap">
+      <div class="tabs" role="tablist">
+        <label for="p-tv">Apple TV</label>
+        <label for="p-iphone">iPhone</label>
+        <label for="p-ipad">iPad</label>
+        <label for="p-mac">Mac</label>
+      </div>
+    </div>
+    <div class="strip strip-tv" data-platform="tv"><img src="/media/shots/de/tv-1.webp" alt="Sodalite auf Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/de/tv-2.webp" alt="Sodalite auf Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/de/tv-3.webp" alt="Sodalite auf Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/de/tv-4.webp" alt="Sodalite auf Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/de/tv-5.webp" alt="Sodalite auf Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/de/tv-6.webp" alt="Sodalite auf Apple TV" width="1400" height="788" loading="lazy"></div>
+    <div class="strip strip-iphone" data-platform="iphone"><img src="/media/shots/de/iphone-1.webp" alt="Sodalite auf iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/de/iphone-2.webp" alt="Sodalite auf iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/de/iphone-3.webp" alt="Sodalite auf iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/de/iphone-4.webp" alt="Sodalite auf iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/de/iphone-5.webp" alt="Sodalite auf iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/de/iphone-6.webp" alt="Sodalite auf iPhone" width="480" height="1043" loading="lazy"></div>
+    <div class="strip strip-ipad" data-platform="ipad"><img src="/media/shots/de/ipad-1.webp" alt="Sodalite auf iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/de/ipad-2.webp" alt="Sodalite auf iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/de/ipad-3.webp" alt="Sodalite auf iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/de/ipad-4.webp" alt="Sodalite auf iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/de/ipad-5.webp" alt="Sodalite auf iPad" width="1000" height="750" loading="lazy"></div>
+    <div class="strip strip-mac" data-platform="mac"><img src="/media/shots/de/mac-1.webp" alt="Sodalite auf Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/de/mac-2.webp" alt="Sodalite auf Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/de/mac-3.webp" alt="Sodalite auf Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/de/mac-4.webp" alt="Sodalite auf Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/de/mac-5.webp" alt="Sodalite auf Mac" width="1200" height="750" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="wrap">
+    <h2>Alles von deinem Server, und mehr</h2>
+    <p class="lead">Sodalite spricht direkt mit deinem Jellyfin-Server. Das bekommst du.</p>
+
+    <div class="feature">
+      <img src="/media/ui/ipad-home.webp" alt="" loading="lazy" width="1000" height="750">
+      <div><h3>Eine Startseite, die zu dir passt</h3><p>Weiterschauen, Als Nächstes, die neuesten Zugänge, Favoriten, Sammlungen und Playlists. Jede Reihe lässt sich ein- und ausblenden und umsortieren. Mehrere Server? Die Startseite fasst bis zu fünf zu einer zusammen.</p></div>
+    </div>
+    <div class="feature flip">
+      <img src="/media/ui/tvos-detail.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Detailseiten, die man gern liest</h3><p>Zuerst das Artwork, die Handlung auf dem ersten Bildschirm, Wertungen von TMDB, IMDb und Rotten Tomatoes, Format-Badges wie 4K, Dolby Vision und Atmos, die Besetzung mit kompletten Filmografien und jede Version eines Titels zur Auswahl.</p></div>
+    </div>
+    <div class="feature">
+      <img src="/media/ui/tvos-player.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Ein Player für die Fernbedienung</h3><p>Bildgenaue Vorschauen beim Spulen, Intro überspringen und Rückblick überspringen, die nächste Folge mit Countdown, Vorspulen bis 256x, Bild in Bild und Untertitel in jedem Format, auch gestyltes ASS und Blu-ray-PGS. Fehlende Untertitel suchen und laden, oder zwei gleichzeitig anzeigen.</p></div>
+    </div>
+    <div class="feature flip">
+      <img src="/media/ui/tvos-livetv.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Live-TV und Aufnahmen</h3><p>Eine echte Programmübersicht mit Favoriten und Kategorien. Live-TV anhalten und zurückspulen, mit der Fernbedienung umschalten, eine Sendung oder ganze Serie aufnehmen und Aufnahmen schon ansehen, während sie noch laufen.</p></div>
+    </div>
+    <div class="feature">
+      <img src="/media/ui/tvos-catalog.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Fehlendes anfordern</h3><p>Stöbere über Seerr in angesagten und kommenden Filmen und Serien. Fordere einen Film, eine ganze Serie oder einzelne Staffeln an, verfolge den Status und genehmige Anfragen, wenn du Admin bist. Eine Anmeldung für beides.</p></div>
+    </div>
+
+    <div class="cards">
+      <article class="card"><img src="/media/ui/tvos-multiview.webp" alt="" loading="lazy" width="1400" height="788"><h3>Multiview</h3><p>Bis zu vier Live-Kanäle gleichzeitig auf dem Apple TV. Der Ton folgt der gewählten Kachel, ein Klick holt sie in den Vollbildmodus.</p></article>
+      <article class="card"><img class="phone" src="/media/ui/iphone-detail.webp" alt="" loading="lazy" width="480" height="1043"><h3>Für unterwegs</h3><p>Auf iPhone und iPad: Filme und ganze Staffeln für offline laden, einen Titel per AirPlay an einen Fernseher schicken oder einen HDMI-Adapter anschließen. Rotationssperre und Kindersperre sitzen direkt im Player.</p></article>
+      <article class="card" data-platform="mac"><img src="/media/ui/mac-home.webp" alt="" loading="lazy" width="1200" height="750"><h3>Nativ auf dem Mac</h3><p>Eine echte Mac-App, keine Portierung: eine Seitenleiste, der Player im eigenen Fenster, volle Tastatursteuerung, Vollbild und Kontextmenüs per Rechtsklick.</p></article>
+      <article class="card text-card"><h3>Auch deine Musik</h3><p>Stöbere nach Alben durch deine Jellyfin-Musik und spiel sie mit einem richtigen Jetzt-läuft-Bildschirm ab, mit Cover, Spulen und Wiedergabe im Hintergrund.</p></article>
+      <article class="card text-card"><h3>Trakt eingebaut</h3><p>Verbinde Trakt mit einem Code. Was du schaust, wird gescrobbelt, Gesehen-Status und Bewertungen synchronisieren in beide Richtungen, und deine Watchlist und Listen werden zu Reihen auf der Startseite. Kein Server-Plugin nötig.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="yours" class="section alt">
+  <div class="wrap">
+    <h2>Ganz deins</h2>
+    <p class="lead">Sodalite hat für fast alles eine Einstellung, und jedes Profil behält seine eigenen.</p>
+    <div class="settings-strip"><figure><img src="/media/ui/tvos-settings-accent.webp" alt="Sodalite-Einstellungen auf dem Apple TV: Akzentfarbe" width="1400" height="788" loading="lazy"><figcaption>Akzentfarbe</figcaption></figure><figure><img src="/media/ui/tvos-settings-appearance.webp" alt="Sodalite-Einstellungen auf dem Apple TV: Darstellung" width="1400" height="788" loading="lazy"><figcaption>Darstellung</figcaption></figure><figure><img src="/media/ui/tvos-settings-home.webp" alt="Sodalite-Einstellungen auf dem Apple TV: Startseite anpassen" width="1400" height="788" loading="lazy"><figcaption>Startseite anpassen</figcaption></figure><figure><img src="/media/ui/tvos-settings-controls.webp" alt="Sodalite-Einstellungen auf dem Apple TV: Player-Steuerung" width="1400" height="788" loading="lazy"><figcaption>Player-Steuerung</figcaption></figure><figure><img src="/media/ui/tvos-settings-playback.webp" alt="Sodalite-Einstellungen auf dem Apple TV: Wiedergabe-Einstellungen" width="1400" height="788" loading="lazy"><figcaption>Wiedergabe-Einstellungen</figcaption></figure><figure><img src="/media/ui/tvos-settings-tabs.webp" alt="Sodalite-Einstellungen auf dem Apple TV: Tabs" width="1400" height="788" loading="lazy"><figcaption>Tabs</figcaption></figure></div>
+    <div class="grid">
+      <div><h3>Farben und Hintergründe</h3><p>Wähle eine Akzentfarbe und einen Hintergrund in Graphitglas oder OLED-Schwarz. Bestimme Kartengröße, Artwork-Stil, Titellogos und welche Badges du sehen willst.</p></div>
+      <div><h3>Tab-Leiste oder Seitenleiste</h3><p>Auf dem Apple TV navigierst du über die Leiste oben oder über eine Seitenleiste in deiner Akzentfarbe. Wähle, welche Tabs erscheinen, und hefte eine Mediathek wie Filme als eigenen Tab an.</p></div>
+      <div><h3>Deine Reihen auf der Startseite</h3><p>Schalte Reihen ein und aus, bring sie in deine Reihenfolge und füge Kürzlich erschienen, kommende Folgen, deine Lieblingsfolgen oder pro Mediathek eine Reihe mit den neuesten Titeln hinzu.</p></div>
+      <div><h3>Deine Player-Tasten</h3><p>Blende die Player-Tasten aus, die du nie nutzt, und ordne den Rest, wie du willst. Leg das Sprungintervall für jede Richtung fest und schalte Statistiken für Nerds ein, wenn du es genau wissen willst.</p></div>
+      <div><h3>Ton für jeden Raum</h3><p>Dialog-Anhebung macht Stimmen klarer, der Nachtmodus hält laute Szenen abends im Zaum, und eine Lautsprecher-Einstellung rechnet Surround auf Stereo oder 5.1 herunter.</p></div>
+      <div><h3>Untertitel nach deinem Geschmack</h3><p>Schrift, Größe, Position und Stil. Erzwungene Untertitel erscheinen von selbst, und deine Spurwahl wird für jeden Film und jede Serie gemerkt.</p></div>
+      <div><h3>Profile und Kindersicherung</h3><p>Wechsle Profile ohne Passwort, jedes mit eigenen Einstellungen. Eine Eltern-PIN sperrt Profile und Einstellungen, und der Spoilerschutz verwischt Folgen, die du noch nicht gesehen hast.</p></div>
+      <div><h3>iCloud-Sync</h3><p>Server, Anmeldungen und Einstellungen folgen dir auf jedes Gerät mit deinem iCloud-Account, Ende-zu-Ende-verschlüsselt.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="engine" class="section engine">
+  <div class="wrap">
+    <p class="kicker">Angetrieben von AetherEngine</p>
+    <h2>Bild und Ton, <em>wie sie gemastert wurden</em>.</h2>
+    <p class="lead">Unter Sodalite läuft AetherEngine, unsere eigene Open-Source-Video-Engine. Sie spielt deine Dateien so, wie sie sind, damit dein Server sie nicht umwandeln muss, und sie behält, was andere Apps wegwerfen.</p>
+    <div class="grid">
+      <div><h3>Spielt fast alles</h3><p>HEVC, H.264, AV1, VP9, MPEG-2, VC-1 und alte DivX- und WMV-Dateien, in MKV, MP4, AVI, TS und mehr, sogar DVD- und Blu-ray-Ordner. Direkt abgespielt, ohne Transkodierung auf deinem Server.</p></div>
+      <div><h3>Echtes HDR</h3><p>HDR10, HDR10+, Dolby Vision und HLG, mit allen Metadaten. Das Apple TV schaltet deinen Fernseher von selbst in den passenden Modus.</p></div>
+      <div class="hl"><h3>Auch Dolby Vision Profil 7</h3><p>Blu-ray-Remuxe mit Dolby Vision Profil 7, FEL eingeschlossen, werden auf dem Gerät in Profil 8.1 umgewandelt, damit dein Fernseher weiter Dolby Vision zeigt. Bei FEL wird die Helligkeit der Enhancement-Ebene Szene für Szene eingerechnet, das bringt das Bild viel näher an die Disc.</p></div>
+      <div><h3>Dolby Atmos</h3><p>Dolby Atmos aus Dolby-Digital-Plus-Spuren lässt das Atmos-Zeichen an deinem Receiver aufleuchten und läuft auf AirPods als 3D-Audio.</p></div>
+      <div class="hl"><h3>Verlustfreie Höhenkanäle</h3><p>Das Apple TV kann TrueHD und DTS:X nicht an deinen Receiver durchreichen, deshalb gehen ihre Höhenkanäle meist verloren. AetherEngine behält sie: Es rendert die Spur zu einem 9.1.6-Mix und schickt ihn ohne verlustbehaftete Kompression per HDMI an deinen Receiver.</p></div>
+      <div><h3>Jeder Untertitel</h3><p>Text- und Bilduntertitel werden auf dem Gerät gezeichnet: SRT, gestyltes ASS, WebVTT, Blu-ray-PGS, DVD, DVB und Videotext. Dein Server muss sie nicht einbrennen.</p></div>
+    </div>
+    <p class="more"><a href="https://aetherengine.superuser404.de">Mehr über AetherEngine &rarr;</a></p>
+  </div>
+</section>
+
+<section id="platforms" class="section">
+  <div class="wrap">
+    <h2>Läuft auf</h2>
+    <p class="lead">Ein kostenloser Download für alle vier. Deine Server und Einstellungen synchronisieren über iCloud zwischen ihnen.</p>
+    <ul class="platforms">
+      <li><strong>Apple TV</strong><span>Apple TV 4K mit tvOS 26 oder neuer</span></li>
+      <li><strong>iPhone</strong><span>iOS 26 oder neuer</span></li>
+      <li><strong>iPad</strong><span>iPadOS 26 oder neuer</span></li>
+      <li><strong>Mac</strong><span>macOS 26 oder neuer</span></li>
+    </ul>
+    <p class="fine center">Du brauchst einen Jellyfin-Server. Seerr ist optional.</p>
+  </div>
+</section>
+
+<section id="community" class="section alt">
+  <div class="wrap">
+    <h2>Open Source, offen entwickelt</h2>
+    <p class="lead">Sodalite ist kostenlos, und der Quellcode liegt öffentlich auf GitHub. Keine Werbung, kein Tracking, keine Analyse. Deine Anmeldungen bleiben auf deinen Geräten und in deiner eigenen iCloud.</p>
+    <div class="cards three">
+      <article class="card text-card"><h3>Einen Fehler gefunden oder fehlt dir etwas?</h3><p>Sag es uns auf GitHub. Jede Meldung wird gelesen, und viele Funktionen in Sodalite haben als Wunsch angefangen.</p><a class="btn" href="https://github.com/superuser404notfound/Sodalite/issues/new/choose">Fehler melden oder Funktion wünschen</a></article>
+      <article class="card text-card"><h3>Fragen und Neuigkeiten</h3><p>Komm auf den Discord für schnelle Fragen, Tipps und Release-News.</p><a class="btn btn-ghost" href="https://discord.gg/P7NvpzNqnG">Zum Discord</a></article>
+      <article class="card text-card"><h3>Lies den Code</h3><p>Sodalite steht unter GPL-3.0, AetherEngine unter LGPL-3.0. Schau ihn dir an, bau ihn selbst oder hilf mit, ihn besser zu machen.</p><a class="btn btn-ghost" href="https://github.com/superuser404notfound/Sodalite">Sodalite auf GitHub</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section final">
+  <div class="wrap">
+    <img src="/media/icon-180.png" alt="" width="80" height="80" loading="lazy">
+    <h2>Bereit zum Schauen?</h2>
+    <p class="lead">Hol dir Sodalite kostenlos im App Store.</p>
+    <a class="store" href="https://apps.apple.com/app/sodalite/id6764418563"><img src="/media/app-store-badge.svg" alt="Laden im App Store" width="180" height="60" loading="lazy"></a>
+    <p class="fine">Neue Versionen früher ausprobieren? <a href="https://testflight.apple.com/join/nWeQzmBX">Mach bei der TestFlight-Beta mit</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <nav>
+      <a href="/privacy">Datenschutz</a>
+      <a href="/imprint.html">Impressum</a>
+      <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a>
+      <a href="https://discord.gg/P7NvpzNqnG">Discord</a>
+    </nav>
+    <p>Sodalite steht in keiner Verbindung zu Jellyfin, Seerr oder Trakt und wird von ihnen nicht unterstützt. Apple TV, iPhone, iPad und Mac sind Marken von Apple Inc. Dolby, Dolby Vision und Dolby Atmos sind Marken von Dolby Laboratories.</p>
+    <p>&copy; 2026 Vincent Herbst</p>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.lang a[hreflang]').forEach(function (a) {
+  a.addEventListener('click', function () { try { localStorage.setItem('lang', a.getAttribute('hreflang')); } catch (e) {} });
+});
+</script>
+</body>
+</html>

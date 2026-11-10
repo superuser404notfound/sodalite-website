@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sodalite: Apple TV, iPhone, iPad, Mac용 Jellyfin</title>
+<meta name="description" content="Apple TV, iPhone, iPad, Mac을 위한 무료 네이티브 Jellyfin 앱, Seerr 요청 기능 내장. Direct Play, Dolby Vision, Dolby Atmos, 무손실 높이 채널, 라이브 TV, 음악까지. 오픈 소스이며 추적은 없습니다.">
+<link rel="canonical" href="https://sodalite.superuser404.de/ko/">
+<link rel="alternate" hreflang="en" href="https://sodalite.superuser404.de/">
+<link rel="alternate" hreflang="cs" href="https://sodalite.superuser404.de/cs/">
+<link rel="alternate" hreflang="da" href="https://sodalite.superuser404.de/da/">
+<link rel="alternate" hreflang="de" href="https://sodalite.superuser404.de/de/">
+<link rel="alternate" hreflang="el" href="https://sodalite.superuser404.de/el/">
+<link rel="alternate" hreflang="es" href="https://sodalite.superuser404.de/es/">
+<link rel="alternate" hreflang="fi" href="https://sodalite.superuser404.de/fi/">
+<link rel="alternate" hreflang="fr" href="https://sodalite.superuser404.de/fr/">
+<link rel="alternate" hreflang="hr" href="https://sodalite.superuser404.de/hr/">
+<link rel="alternate" hreflang="hu" href="https://sodalite.superuser404.de/hu/">
+<link rel="alternate" hreflang="it" href="https://sodalite.superuser404.de/it/">
+<link rel="alternate" hreflang="ja" href="https://sodalite.superuser404.de/ja/">
+<link rel="alternate" hreflang="ko" href="https://sodalite.superuser404.de/ko/">
+<link rel="alternate" hreflang="nb" href="https://sodalite.superuser404.de/nb/">
+<link rel="alternate" hreflang="nl" href="https://sodalite.superuser404.de/nl/">
+<link rel="alternate" hreflang="pl" href="https://sodalite.superuser404.de/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://sodalite.superuser404.de/pt-br/">
+<link rel="alternate" hreflang="pt-PT" href="https://sodalite.superuser404.de/pt-pt/">
+<link rel="alternate" hreflang="ro" href="https://sodalite.superuser404.de/ro/">
+<link rel="alternate" hreflang="ru" href="https://sodalite.superuser404.de/ru/">
+<link rel="alternate" hreflang="sk" href="https://sodalite.superuser404.de/sk/">
+<link rel="alternate" hreflang="sv" href="https://sodalite.superuser404.de/sv/">
+<link rel="alternate" hreflang="tr" href="https://sodalite.superuser404.de/tr/">
+<link rel="alternate" hreflang="uk" href="https://sodalite.superuser404.de/uk/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sodalite.superuser404.de/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sodalite.superuser404.de/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://sodalite.superuser404.de/">
+<meta property="og:title" content="Sodalite: Apple TV, iPhone, iPad, Mac용 Jellyfin">
+<meta property="og:description" content="Apple TV, iPhone, iPad, Mac을 위한 무료 네이티브 Jellyfin 앱, Seerr 요청 기능 내장. Direct Play, Dolby Vision, Dolby Atmos, 무손실 높이 채널, 라이브 TV, 음악까지. 오픈 소스이며 추적은 없습니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sodalite.superuser404.de/ko/">
+<meta property="og:image" content="https://sodalite.superuser404.de/media/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070b1f">
+<meta name="apple-itunes-app" content="app-id=6764418563">
+<link rel="icon" href="/media/icon-64.png">
+<link rel="apple-touch-icon" href="/media/icon-180.png">
+<link rel="stylesheet" href="/style.css?v=1b78c2cf">
+
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="/ko/"><img src="/media/icon-64.png" alt="" width="32" height="32"><span>Sodalite</span></a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#tour">둘러보기</a>
+      <a href="#features">기능</a>
+      <a href="#yours">나만의 설정</a>
+      <a href="#engine">화질과 음질</a>
+      <a href="#community">커뮤니티</a>
+    </nav>
+    <details class="lang">
+      <summary aria-label="언어"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-2.9a15.7 15.7 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8ZM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4ZM4.3 14a8.2 8.2 0 0 1 0-4h3.3a16.5 16.5 0 0 0 0 4H4.3Zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 0 1 5.1 16ZM8 8H5.1a8 8 0 0 1 4.3-3.6C8.8 5.5 8.4 6.7 8 8Zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4Zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4Zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 0 1-4.3 3.6Zm1.8-5.6a16.5 16.5 0 0 0 0-4h3.3a8.2 8.2 0 0 1 0 4h-3.3Z"/></svg><span>한국어</span></summary>
+      <ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/cs/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/el/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fi/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/hr/" hreflang="hr" lang="hr">Hrvatski</a></li><li><a href="/hu/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko" aria-current="page">한국어</a></li><li><a href="/nb/" hreflang="nb" lang="nb">Norsk bokmål</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT">Português (Portugal)</a></li><li><a href="/ro/" hreflang="ro" lang="ro">Română</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/sk/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/uk/" hreflang="uk" lang="uk">Українська</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul>
+    </details>
+    <a class="btn btn-small" href="https://apps.apple.com/app/sodalite/id6764418563">App Store</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <img class="hero-icon" src="/media/icon-180.png" alt="" width="96" height="96">
+    <p class="kicker">Jellyfin과 Seerr를 위한 앱</p>
+    <h1>당신의 Jellyfin, <em>최고의 모습으로</em>.</h1>
+    <p class="lead">Sodalite는 당신의 Jellyfin 라이브러리를 Apple TV, iPhone, iPad, Mac에서 재생합니다. 네이티브로, 빠르게, 그리고 파일이 만들어진 그대로의 화질과 음질로. 없는 작품은 앱을 떠나지 않고 Seerr로 요청하세요.</p>
+    <div class="cta">
+      <a class="store" href="https://apps.apple.com/app/sodalite/id6764418563"><img src="/media/app-store-badge.svg" alt="App Store에서 다운로드하기" width="180" height="60"></a>
+    </div>
+    <p class="fine">무료. 한 번의 다운로드로 모든 Apple 기기에서.</p>
+    <p class="fine">새 버전을 먼저 써 보고 싶다면 <a href="https://testflight.apple.com/join/nWeQzmBX">TestFlight 베타에 참여하세요</a>.</p>
+  </div>
+  <div class="wrap hero-shot">
+    <img src="/media/ui/tvos-home.webp" alt="Apple TV의 Sodalite 홈 화면" width="1400" height="788" fetchpriority="high">
+  </div>
+</section>
+
+<section id="tour" class="section">
+  <div class="wrap">
+    <h2>모든 화면에서 만나 보세요</h2>
+    <p class="lead">같은 라이브러리, 같은 디자인, 같은 플레이어를 하나의 앱으로. 거실의 TV부터 손안의 휴대폰까지.</p>
+  </div>
+  <div class="tour">
+    <input type="radio" name="platform" id="p-tv" checked>
+    <input type="radio" name="platform" id="p-iphone">
+    <input type="radio" name="platform" id="p-ipad">
+    <input type="radio" name="platform" id="p-mac">
+    <div class="wrap">
+      <div class="tabs" role="tablist">
+        <label for="p-tv">Apple TV</label>
+        <label for="p-iphone">iPhone</label>
+        <label for="p-ipad">iPad</label>
+        <label for="p-mac">Mac</label>
+      </div>
+    </div>
+    <div class="strip strip-tv" data-platform="tv"><img src="/media/shots/ko/tv-1.webp" alt="Apple TV에서 실행 중인 Sodalite" width="1400" height="788" loading="lazy"><img src="/media/shots/ko/tv-2.webp" alt="Apple TV에서 실행 중인 Sodalite" width="1400" height="788" loading="lazy"><img src="/media/shots/ko/tv-3.webp" alt="Apple TV에서 실행 중인 Sodalite" width="1400" height="788" loading="lazy"><img src="/media/shots/ko/tv-4.webp" alt="Apple TV에서 실행 중인 Sodalite" width="1400" height="788" loading="lazy"><img src="/media/shots/ko/tv-5.webp" alt="Apple TV에서 실행 중인 Sodalite" width="1400" height="788" loading="lazy"><img src="/media/shots/ko/tv-6.webp" alt="Apple TV에서 실행 중인 Sodalite" width="1400" height="788" loading="lazy"></div>
+    <div class="strip strip-iphone" data-platform="iphone"><img src="/media/shots/ko/iphone-1.webp" alt="iPhone에서 실행 중인 Sodalite" width="480" height="1043" loading="lazy"><img src="/media/shots/ko/iphone-2.webp" alt="iPhone에서 실행 중인 Sodalite" width="480" height="1043" loading="lazy"><img src="/media/shots/ko/iphone-3.webp" alt="iPhone에서 실행 중인 Sodalite" width="480" height="1043" loading="lazy"><img src="/media/shots/ko/iphone-4.webp" alt="iPhone에서 실행 중인 Sodalite" width="480" height="1043" loading="lazy"><img src="/media/shots/ko/iphone-5.webp" alt="iPhone에서 실행 중인 Sodalite" width="480" height="1043" loading="lazy"><img src="/media/shots/ko/iphone-6.webp" alt="iPhone에서 실행 중인 Sodalite" width="480" height="1043" loading="lazy"></div>
+    <div class="strip strip-ipad" data-platform="ipad"><img src="/media/shots/ko/ipad-1.webp" alt="iPad에서 실행 중인 Sodalite" width="1000" height="750" loading="lazy"><img src="/media/shots/ko/ipad-2.webp" alt="iPad에서 실행 중인 Sodalite" width="1000" height="750" loading="lazy"><img src="/media/shots/ko/ipad-3.webp" alt="iPad에서 실행 중인 Sodalite" width="1000" height="750" loading="lazy"><img src="/media/shots/ko/ipad-4.webp" alt="iPad에서 실행 중인 Sodalite" width="1000" height="750" loading="lazy"><img src="/media/shots/ko/ipad-5.webp" alt="iPad에서 실행 중인 Sodalite" width="1000" height="750" loading="lazy"></div>
+    <div class="strip strip-mac" data-platform="mac"><img src="/media/shots/ko/mac-1.webp" alt="Mac에서 실행 중인 Sodalite" width="1200" height="750" loading="lazy"><img src="/media/shots/ko/mac-2.webp" alt="Mac에서 실행 중인 Sodalite" width="1200" height="750" loading="lazy"><img src="/media/shots/ko/mac-3.webp" alt="Mac에서 실행 중인 Sodalite" width="1200" height="750" loading="lazy"><img src="/media/shots/ko/mac-4.webp" alt="Mac에서 실행 중인 Sodalite" width="1200" height="750" loading="lazy"><img src="/media/shots/ko/mac-5.webp" alt="Mac에서 실행 중인 Sodalite" width="1200" height="750" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="wrap">
+    <h2>서버의 모든 것, 그리고 그 이상</h2>
+    <p class="lead">Sodalite는 Jellyfin 서버와 직접 통신합니다. 이런 기능을 누릴 수 있습니다.</p>
+
+    <div class="feature">
+      <img src="/media/ui/ipad-home.webp" alt="" loading="lazy" width="1000" height="750">
+      <div><h3>나에게 맞춘 홈</h3><p>계속 시청, 다음, 최근 추가된 항목, 즐겨찾기, 컬렉션, 재생 목록. 모든 행을 보이거나 숨기고 순서를 바꿀 수 있습니다. 서버가 여러 대라면 최대 다섯 대를 하나의 홈으로 합칠 수 있습니다.</p></div>
+    </div>
+    <div class="feature flip">
+      <img src="/media/ui/tvos-detail.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>읽을 맛 나는 상세 페이지</h3><p>아트워크가 먼저, 줄거리는 첫 화면에. TMDB, IMDb, Rotten Tomatoes 평점, 4K, Dolby Vision, Atmos 같은 포맷 배지, 전체 필모그래피를 갖춘 출연진, 그리고 타이틀의 모든 버전 중에서 고를 수 있습니다.</p></div>
+    </div>
+    <div class="feature">
+      <img src="/media/ui/tvos-player.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>리모컨을 위한 플레이어</h3><p>탐색하는 동안 프레임 단위로 정확한 미리보기, 인트로 건너뛰기와 지난 줄거리 건너뛰기, 카운트다운과 함께 나오는 다음 에피소드, 최대 256배 빨리 감기, 화면 속 화면, 그리고 스타일이 적용된 ASS와 Blu-ray PGS를 포함한 모든 형식의 자막. 없는 자막은 검색해서 다운로드하고, 두 개를 동시에 띄울 수도 있습니다.</p></div>
+    </div>
+    <div class="feature flip">
+      <img src="/media/ui/tvos-livetv.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>라이브 TV와 녹화</h3><p>즐겨찾기와 카테고리를 갖춘 제대로 된 편성표. 라이브 TV를 일시정지하고 되감고, 리모컨으로 채널을 바꾸고, 프로그램이나 시리즈 전체를 녹화하세요. 녹화가 진행 중일 때도 바로 볼 수 있습니다.</p></div>
+    </div>
+    <div class="feature">
+      <img src="/media/ui/tvos-catalog.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>없는 작품은 요청하세요</h3><p>Seerr로 인기작과 개봉 예정 영화, 시리즈를 둘러보세요. 영화, 시리즈 전체 또는 개별 시즌을 요청하고, 진행 상황을 확인하고, 관리자라면 요청을 승인할 수 있습니다. 로그인은 한 번으로 둘 다.</p></div>
+    </div>
+
+    <div class="cards">
+      <article class="card"><img src="/media/ui/tvos-multiview.webp" alt="" loading="lazy" width="1400" height="788"><h3>멀티뷰</h3><p>Apple TV에서 최대 네 개의 라이브 채널을 동시에 시청하세요. 소리는 선택한 타일을 따라가고, 클릭하면 전체 화면이 됩니다.</p></article>
+      <article class="card"><img class="phone" src="/media/ui/iphone-detail.webp" alt="" loading="lazy" width="480" height="1043"><h3>이동 중에도</h3><p>iPhone과 iPad에서는 영화와 시즌 전체를 다운로드해 오프라인으로 보고, AirPlay로 TV에 보내거나, HDMI 어댑터를 연결할 수 있습니다. 화면 회전 잠금과 어린이 잠금은 플레이어에 바로 있습니다.</p></article>
+      <article class="card" data-platform="mac"><img src="/media/ui/mac-home.webp" alt="" loading="lazy" width="1200" height="750"><h3>Mac에서도 네이티브</h3><p>이식판이 아닌 진짜 Mac 앱: 사이드바, 별도 윈도우의 플레이어, 완전한 키보드 조작, 전체 화면, 우클릭 메뉴.</p></article>
+      <article class="card text-card"><h3>음악도 함께</h3><p>Jellyfin 음악을 앨범별로 둘러보고, 제대로 된 지금 재생 중 화면, 커버 아트, 탐색, 백그라운드 재생으로 즐기세요.</p></article>
+      <article class="card text-card"><h3>Trakt 내장</h3><p>코드 하나로 Trakt를 연결하세요. 시청한 작품은 스크로블되고, 시청 상태와 평점은 양방향으로 동기화되며, 관심 목록과 리스트는 홈의 행이 됩니다. 서버 플러그인은 필요 없습니다.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="yours" class="section alt">
+  <div class="wrap">
+    <h2>나만의 설정</h2>
+    <p class="lead">Sodalite는 거의 모든 것을 설정할 수 있고, 각 프로필이 자신만의 설정을 가집니다.</p>
+    <div class="settings-strip"><figure><img src="/media/ui/tvos-settings-accent.webp" alt="Apple TV의 Sodalite 설정: 강조 색상" width="1400" height="788" loading="lazy"><figcaption>강조 색상</figcaption></figure><figure><img src="/media/ui/tvos-settings-appearance.webp" alt="Apple TV의 Sodalite 설정: 모양" width="1400" height="788" loading="lazy"><figcaption>모양</figcaption></figure><figure><img src="/media/ui/tvos-settings-home.webp" alt="Apple TV의 Sodalite 설정: 홈 사용자 지정" width="1400" height="788" loading="lazy"><figcaption>홈 사용자 지정</figcaption></figure><figure><img src="/media/ui/tvos-settings-controls.webp" alt="Apple TV의 Sodalite 설정: 플레이어 컨트롤" width="1400" height="788" loading="lazy"><figcaption>플레이어 컨트롤</figcaption></figure><figure><img src="/media/ui/tvos-settings-playback.webp" alt="Apple TV의 Sodalite 설정: 재생 설정" width="1400" height="788" loading="lazy"><figcaption>재생 설정</figcaption></figure><figure><img src="/media/ui/tvos-settings-tabs.webp" alt="Apple TV의 Sodalite 설정: 탭" width="1400" height="788" loading="lazy"><figcaption>탭</figcaption></figure></div>
+    <div class="grid">
+      <div><h3>색상과 배경</h3><p>강조 색상을 고르고 그래파이트 글래스 또는 OLED 블랙 배경을 선택하세요. 카드 크기, 아트워크 스타일, 타이틀 로고, 표시할 배지도 고를 수 있습니다.</p></div>
+      <div><h3>탭 막대 또는 사이드바</h3><p>Apple TV에서는 상단 막대나 강조 색상의 사이드바로 이동합니다. 표시할 탭을 고르고, 영화 같은 라이브러리를 별도의 탭으로 고정할 수 있습니다.</p></div>
+      <div><h3>나만의 홈 행</h3><p>행을 켜고 끄고, 원하는 순서로 놓고, 최근 공개된 작품, 방영 예정 에피소드, 즐겨찾는 에피소드, 라이브러리별 최신 항목 행을 추가하세요.</p></div>
+      <div><h3>나만의 플레이어 버튼</h3><p>쓰지 않는 플레이어 버튼은 숨기고 나머지는 원하는 순서로 놓으세요. 건너뛰기 간격은 방향별로 설정하고, 자세한 정보가 필요하면 마니아를 위한 통계를 켜세요.</p></div>
+      <div><h3>어느 방에나 맞는 사운드</h3><p>대화 강조는 목소리를 더 또렷하게, 야간 모드는 밤에 큰 소리를 줄여 줍니다. 스피커 설정은 서라운드를 스테레오나 5.1로 합쳐 줍니다.</p></div>
+      <div><h3>원하는 대로 자막</h3><p>글꼴, 크기, 위치, 스타일. 강제 자막은 알아서 표시되고, 고른 트랙은 영화와 시리즈마다 기억됩니다.</p></div>
+      <div><h3>프로필과 자녀 보호</h3><p>암호 없이 프로필을 전환하고, 프로필마다 자신만의 설정을 가집니다. 보호자 PIN으로 프로필과 설정을 잠그고, 스포일러 방지는 아직 보지 않은 에피소드를 흐리게 처리합니다.</p></div>
+      <div><h3>iCloud 동기화</h3><p>서버, 로그인, 설정이 같은 iCloud 계정의 모든 기기로 따라옵니다. 종단 간 암호화로 보호됩니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="engine" class="section engine">
+  <div class="wrap">
+    <p class="kicker">AetherEngine 기반</p>
+    <h2>화질과 음질, <em>마스터링된 그대로</em>.</h2>
+    <p class="lead">Sodalite의 바탕에는 우리가 직접 만든 오픈 소스 비디오 엔진 AetherEngine이 있습니다. 파일을 있는 그대로 재생하므로 서버가 변환할 필요가 없고, 다른 앱이 버리는 정보까지 지켜 냅니다.</p>
+    <div class="grid">
+      <div><h3>거의 모든 것을 재생</h3><p>HEVC, H.264, AV1, VP9, MPEG-2, VC-1, 오래된 DivX와 WMV 파일까지, MKV, MP4, AVI, TS 등에 담긴 그대로. DVD와 Blu-ray 폴더도 지원합니다. 서버에서 트랜스코딩하지 않고 직접 재생합니다.</p></div>
+      <div><h3>진짜 HDR</h3><p>HDR10, HDR10+, Dolby Vision, HLG를 메타데이터까지 온전히. Apple TV가 TV를 알맞은 모드로 알아서 전환합니다.</p></div>
+      <div class="hl"><h3>Dolby Vision Profile 7도</h3><p>Dolby Vision Profile 7이 담긴 Blu-ray 리먹스는 FEL을 포함해 기기에서 Profile 8.1로 변환되므로, TV에는 여전히 Dolby Vision으로 표시됩니다. FEL의 경우 향상 레이어의 밝기를 장면마다 반영하여 화면이 디스크에 훨씬 가까워집니다.</p></div>
+      <div><h3>Dolby Atmos</h3><p>Dolby Digital Plus 트랙의 Dolby Atmos는 리시버의 Atmos 표시를 켜고, AirPods에서는 공간 음향으로 재생됩니다.</p></div>
+      <div class="hl"><h3>무손실 높이 채널</h3><p>Apple TV는 TrueHD나 DTS:X를 리시버로 그대로 넘길 수 없어서 높이 채널이 보통 사라집니다. AetherEngine은 이를 지켜 냅니다. 트랙을 9.1.6 믹스로 렌더링해 손실 압축 없이 HDMI로 리시버에 보냅니다.</p></div>
+      <div><h3>모든 자막</h3><p>텍스트 자막과 이미지 자막 모두 기기에서 그립니다: SRT, 스타일이 적용된 ASS, WebVTT, Blu-ray PGS, DVD, DVB, 텔레텍스트. 서버가 자막을 입힐 필요가 없습니다.</p></div>
+    </div>
+    <p class="more"><a href="https://aetherengine.superuser404.de">AetherEngine 자세히 알아보기 &rarr;</a></p>
+  </div>
+</section>
+
+<section id="platforms" class="section">
+  <div class="wrap">
+    <h2>지원 기기</h2>
+    <p class="lead">한 번의 무료 다운로드로 네 기기 모두에서. 서버와 설정은 iCloud로 기기 간에 동기화됩니다.</p>
+    <ul class="platforms">
+      <li><strong>Apple TV</strong><span>tvOS 26 이상의 Apple TV 4K</span></li>
+      <li><strong>iPhone</strong><span>iOS 26 이상</span></li>
+      <li><strong>iPad</strong><span>iPadOS 26 이상</span></li>
+      <li><strong>Mac</strong><span>macOS 26 이상</span></li>
+    </ul>
+    <p class="fine center">Jellyfin 서버가 필요합니다. Seerr는 선택 사항입니다.</p>
+  </div>
+</section>
+
+<section id="community" class="section alt">
+  <div class="wrap">
+    <h2>오픈 소스, 공개적으로 개발</h2>
+    <p class="lead">Sodalite는 무료이며 소스 코드는 GitHub에 공개되어 있습니다. 광고도, 추적도, 분석도 없습니다. 로그인 정보는 당신의 기기와 당신의 iCloud에만 저장됩니다.</p>
+    <div class="cards three">
+      <article class="card text-card"><h3>버그를 찾았거나 필요한 기능이 있나요?</h3><p>GitHub에서 알려 주세요. 모든 제보를 읽고 있으며, Sodalite의 많은 기능이 요청에서 시작되었습니다.</p><a class="btn" href="https://github.com/superuser404notfound/Sodalite/issues/new/choose">버그 제보 또는 기능 요청</a></article>
+      <article class="card text-card"><h3>질문과 소식</h3><p>간단한 질문, 팁, 출시 소식은 Discord에서 만나요.</p><a class="btn btn-ghost" href="https://discord.gg/P7NvpzNqnG">Discord 참여하기</a></article>
+      <article class="card text-card"><h3>코드 살펴보기</h3><p>Sodalite는 GPL-3.0, AetherEngine은 LGPL-3.0입니다. 코드를 살펴보고, 직접 빌드하고, 더 낫게 만드는 데 함께해 주세요.</p><a class="btn btn-ghost" href="https://github.com/superuser404notfound/Sodalite">GitHub의 Sodalite</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section final">
+  <div class="wrap">
+    <img src="/media/icon-180.png" alt="" width="80" height="80" loading="lazy">
+    <h2>이제 볼 준비 되셨나요?</h2>
+    <p class="lead">App Store에서 Sodalite를 무료로 받으세요.</p>
+    <a class="store" href="https://apps.apple.com/app/sodalite/id6764418563"><img src="/media/app-store-badge.svg" alt="App Store에서 다운로드하기" width="180" height="60" loading="lazy"></a>
+    <p class="fine">새 버전을 먼저 써 보고 싶다면 <a href="https://testflight.apple.com/join/nWeQzmBX">TestFlight 베타에 참여하세요</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <nav>
+      <a href="/privacy">개인정보</a>
+      <a href="/imprint.html">법적 고지</a>
+      <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a>
+      <a href="https://discord.gg/P7NvpzNqnG">Discord</a>
+    </nav>
+    <p>Sodalite는 Jellyfin, Seerr, Trakt와 제휴하거나 이들의 보증을 받지 않았습니다. Apple TV, iPhone, iPad, Mac은 Apple Inc.의 상표입니다. Dolby, Dolby Vision, Dolby Atmos는 Dolby Laboratories의 상표입니다.</p>
+    <p>&copy; 2026 Vincent Herbst</p>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.lang a[hreflang]').forEach(function (a) {
+  a.addEventListener('click', function () { try { localStorage.setItem('lang', a.getAttribute('hreflang')); } catch (e) {} });
+});
+</script>
+</body>
+</html>
