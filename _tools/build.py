@@ -97,12 +97,16 @@ def settings_html(s):
     return "".join(items)
 
 
+# Strings that land inside an HTML attribute are rendered as plain, quote-escaped text.
+ATTRIBUTE_KEYS = set()
+
+
 def render(template, code, strings, version):
     values = {}
     for k, v in strings.items():
         check_markup(code, k, v)
         values[k] = v
-    for k in ("meta_title", "meta_description"):
+    for k in ATTRIBUTE_KEYS:
         values[k] = plain(strings[k])
     values.update(strip_html(code, strings))
     values["settings_strip"] = settings_html(strings)
@@ -141,6 +145,8 @@ def main():
     sdir = os.path.join(ROOT, "_src", "strings")
     en = json.load(open(os.path.join(sdir, "en.json"), encoding="utf-8"))
     used = set(re.findall(r"\{\{([a-z0-9_]+)\}\}", template))
+    ATTRIBUTE_KEYS.update(re.findall(r'="[^"<>]*\{\{([a-z0-9_]+)\}\}', template))
+    ATTRIBUTE_KEYS.intersection_update(en)
     css = open(os.path.join(ROOT, "style.css"), "rb").read()
     version = hashlib.sha1(css).hexdigest()[:8]
 
@@ -148,8 +154,7 @@ def main():
     for code in LOCALES:
         path = os.path.join(sdir, f"{code}.json")
         if not os.path.exists(path):
-            print(f"skip {code}: no strings yet")
-            continue
+            raise SystemExit(f"{code}.json is missing, but every page links /{code.lower()}/")
         strings = json.load(open(path, encoding="utf-8"))
         missing = set(en) - set(strings)
         extra = set(strings) - set(en)
