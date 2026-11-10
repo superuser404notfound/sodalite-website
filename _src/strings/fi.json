@@ -108,5 +108,6 @@
   "final_text": "Hae Sodalite ilmaiseksi App Storesta.",
   "footer_privacy": "Tietosuoja",
   "footer_imprint": "Oikeudelliset tiedot",
-  "footer_note": "Sodalite ei ole sidoksissa Jellyfiniin, Seerriin tai Traktiin, eivätkä ne tue sitä. Apple TV, iPhone, iPad ja Mac ovat Apple Inc:n tavaramerkkejä. Dolby, Dolby Vision ja Dolby Atmos ovat Dolby Laboratoriesin tavaramerkkejä."
+  "footer_note": "Sodalite ei ole sidoksissa Jellyfiniin, Seerriin tai Traktiin, eivätkä ne tue sitä. Apple TV, iPhone, iPad ja Mac ovat Apple Inc:n tavaramerkkejä. Dolby, Dolby Vision ja Dolby Atmos ovat Dolby Laboratoriesin tavaramerkkejä.",
+  "footer_trakt": "Sodalite käyttää Traktia, mutta Trakt ei ole hyväksynyt tai sertifioinut sitä."
 }

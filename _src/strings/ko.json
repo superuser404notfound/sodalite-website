@@ -108,5 +108,6 @@
   "final_text": "App Store에서 Sodalite를 무료로 받으세요.",
   "footer_privacy": "개인정보",
   "footer_imprint": "법적 고지",
-  "footer_note": "Sodalite는 Jellyfin, Seerr, Trakt와 제휴하거나 이들의 보증을 받지 않았습니다. Apple TV, iPhone, iPad, Mac은 Apple Inc.의 상표입니다. Dolby, Dolby Vision, Dolby Atmos는 Dolby Laboratories의 상표입니다."
+  "footer_note": "Sodalite는 Jellyfin, Seerr, Trakt와 제휴하거나 이들의 보증을 받지 않았습니다. Apple TV, iPhone, iPad, Mac은 Apple Inc.의 상표입니다. Dolby, Dolby Vision, Dolby Atmos는 Dolby Laboratories의 상표입니다.",
+  "footer_trakt": "Sodalite는 Trakt를 사용하지만 Trakt의 보증이나 인증을 받지 않았습니다."
 }

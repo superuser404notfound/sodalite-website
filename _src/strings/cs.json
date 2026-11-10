@@ -108,5 +108,6 @@
   "final_text": "Stáhni si Sodalite zdarma v App Storu.",
   "footer_privacy": "Soukromí",
   "footer_imprint": "Právní informace",
-  "footer_note": "Sodalite není přidružen k Jellyfin, Seerr ani Trakt a není jimi podporován. Apple TV, iPhone, iPad a Mac jsou ochranné známky společnosti Apple Inc. Dolby, Dolby Vision a Dolby Atmos jsou ochranné známky společnosti Dolby Laboratories."
+  "footer_note": "Sodalite není přidružen k Jellyfin, Seerr ani Trakt a není jimi podporován. Apple TV, iPhone, iPad a Mac jsou ochranné známky společnosti Apple Inc. Dolby, Dolby Vision a Dolby Atmos jsou ochranné známky společnosti Dolby Laboratories.",
+  "footer_trakt": "Sodalite používá Trakt, ale Trakt jej neschválil ani necertifikoval."
 }

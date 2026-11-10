@@ -108,5 +108,6 @@
   "final_text": "在 App Store 免费获取 Sodalite。",
   "footer_privacy": "隐私",
   "footer_imprint": "法律声明",
-  "footer_note": "Sodalite 与 Jellyfin、Seerr 或 Trakt 无关联，也未获得其认可。Apple TV、iPhone、iPad 和 Mac 是 Apple Inc. 的商标。Dolby、Dolby Vision 和 Dolby Atmos 是 Dolby Laboratories 的商标。"
+  "footer_note": "Sodalite 与 Jellyfin、Seerr 或 Trakt 无关联，也未获得其认可。Apple TV、iPhone、iPad 和 Mac 是 Apple Inc. 的商标。Dolby、Dolby Vision 和 Dolby Atmos 是 Dolby Laboratories 的商标。",
+  "footer_trakt": "Sodalite 使用 Trakt，但未获得 Trakt 的认可或认证。"
 }

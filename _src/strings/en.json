@@ -108,5 +108,6 @@
   "final_text": "Get Sodalite for free on the App Store.",
   "footer_privacy": "Privacy",
   "footer_imprint": "Legal notice",
-  "footer_note": "Sodalite is not affiliated with or endorsed by Jellyfin, Seerr or Trakt. Apple TV, iPhone, iPad and Mac are trademarks of Apple Inc. Dolby, Dolby Vision and Dolby Atmos are trademarks of Dolby Laboratories."
+  "footer_note": "Sodalite is not affiliated with or endorsed by Jellyfin, Seerr or Trakt. Apple TV, iPhone, iPad and Mac are trademarks of Apple Inc. Dolby, Dolby Vision and Dolby Atmos are trademarks of Dolby Laboratories.",
+  "footer_trakt": "Sodalite uses Trakt but is not endorsed or certified by Trakt."
 }
