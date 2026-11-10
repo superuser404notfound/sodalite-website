@@ -76,7 +76,7 @@
   "e_direct_title": "Toistaa lähes kaiken",
   "e_direct_text": "HEVC, H.264, AV1, VP9, MPEG-2, VC-1 sekä vanhat DivX- ja WMV-tiedostot, MKV-, MP4-, AVI- ja TS-muodoissa ja muissa, jopa DVD- ja Blu-ray-kansiot. Toistetaan suoraan, ilman transkoodausta palvelimellasi.",
   "e_hdr_title": "Aito HDR",
-  "e_hdr_text": "HDR10, HDR10+, Dolby Vision ja HLG täysine metatietoineen. Apple TV vaihtaa televisiosi oikeaan tilaan itsestään.",
+  "e_hdr_text": "HDR10, HDR10+, Dolby Vision ja HLG täysine metatietoineen. Apple TV vaihtaa televisiosi oikeaan tilaan itsestään, ja Parannettu skaalaus terävöittää SD- ja 720p-videon.",
   "e_dv7_title": "Myös Dolby Vision Profile 7",
   "e_dv7_text": "Blu-ray-remuxit, joissa on Dolby Vision Profile 7, myös FEL, muunnetaan laitteella Profile 8.1:ksi, joten televisiosi näyttää yhä Dolby Visionia. FEL:n kohdalla parannuskerroksen kirkkaus yhdistetään kohtaus kohtaukselta, mikä tuo kuvan paljon lähemmäs levyä.",
   "e_atmos_title": "Dolby Atmos",

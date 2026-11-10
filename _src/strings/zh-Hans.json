@@ -76,7 +76,7 @@
   "e_direct_title": "几乎什么都能播",
   "e_direct_text": "HEVC、H.264、AV1、VP9、MPEG-2、VC-1，以及老旧的 DivX 和 WMV 文件，封装在 MKV、MP4、AVI、TS 等格式中，甚至 DVD 和蓝光文件夹。直接播放，服务器无需转码。",
   "e_hdr_title": "真正的 HDR",
-  "e_hdr_text": "HDR10、HDR10+、Dolby Vision 和 HLG，元数据完整保留。Apple TV 会自动把电视切换到对应模式。",
+  "e_hdr_text": "HDR10、HDR10+、Dolby Vision 和 HLG，元数据完整保留。Apple TV 会自动把电视切换到对应模式，增强型画面放大则让 SD 和 720p 视频更清晰。",
   "e_dv7_title": "也支持 Dolby Vision Profile 7",
   "e_dv7_text": "带 Dolby Vision Profile 7 的蓝光 Remux（包括 FEL）会在设备上转换为 Profile 8.1，因此你的电视依然显示 Dolby Vision。对于 FEL，增强层的亮度信息会逐场景融入，让画面更接近原盘。",
   "e_atmos_title": "Dolby Atmos",

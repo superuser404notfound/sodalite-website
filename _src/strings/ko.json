@@ -76,7 +76,7 @@
   "e_direct_title": "거의 모든 것을 재생",
   "e_direct_text": "HEVC, H.264, AV1, VP9, MPEG-2, VC-1, 오래된 DivX와 WMV 파일까지, MKV, MP4, AVI, TS 등에 담긴 그대로. DVD와 Blu-ray 폴더도 지원합니다. 서버에서 트랜스코딩하지 않고 직접 재생합니다.",
   "e_hdr_title": "진짜 HDR",
-  "e_hdr_text": "HDR10, HDR10+, Dolby Vision, HLG를 메타데이터까지 온전히. Apple TV가 TV를 알맞은 모드로 알아서 전환합니다.",
+  "e_hdr_text": "HDR10, HDR10+, Dolby Vision, HLG를 메타데이터까지 온전히. Apple TV가 TV를 알맞은 모드로 알아서 전환하고, 향상된 업스케일링이 SD와 720p 영상을 선명하게 만듭니다.",
   "e_dv7_title": "Dolby Vision Profile 7도",
   "e_dv7_text": "Dolby Vision Profile 7이 담긴 Blu-ray 리먹스는 FEL을 포함해 기기에서 Profile 8.1로 변환되므로, TV에는 여전히 Dolby Vision으로 표시됩니다. FEL의 경우 향상 레이어의 밝기를 장면마다 반영하여 화면이 디스크에 훨씬 가까워집니다.",
   "e_atmos_title": "Dolby Atmos",

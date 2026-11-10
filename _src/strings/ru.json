@@ -76,7 +76,7 @@
   "e_direct_title": "Играет почти всё",
   "e_direct_text": "HEVC, H.264, AV1, VP9, MPEG-2, VC-1 и старые файлы DivX и WMV в MKV, MP4, AVI, TS и других контейнерах, даже папки DVD и Blu-ray. Воспроизводятся напрямую, без транскодирования на сервере.",
   "e_hdr_title": "Настоящий HDR",
-  "e_hdr_text": "HDR10, HDR10+, Dolby Vision и HLG с полными метаданными. Apple TV сама переключает телевизор в нужный режим.",
+  "e_hdr_text": "HDR10, HDR10+, Dolby Vision и HLG с полными метаданными. Apple TV сама переключает телевизор в нужный режим, а Улучшенное масштабирование делает чётче видео SD и 720p.",
   "e_dv7_title": "И даже Dolby Vision Profile 7",
   "e_dv7_text": "Ремуксы Blu-ray с Dolby Vision Profile 7, включая FEL, конвертируются прямо на устройстве в Profile 8.1, так что телевизор по-прежнему показывает Dolby Vision. Для FEL яркость слоя улучшения встраивается сцена за сценой, и картинка становится намного ближе к диску.",
   "e_atmos_title": "Dolby Atmos",

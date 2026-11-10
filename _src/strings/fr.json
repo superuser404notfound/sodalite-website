@@ -76,7 +76,7 @@
   "e_direct_title": "Lit presque tout",
   "e_direct_text": "HEVC, H.264, AV1, VP9, MPEG-2, VC-1 et les vieux fichiers DivX et WMV, en MKV, MP4, AVI, TS et plus, même des dossiers DVD et Blu-ray. Lus directement, sans transcodage sur votre serveur.",
   "e_hdr_title": "Un vrai HDR",
-  "e_hdr_text": "HDR10, HDR10+, Dolby Vision et HLG, avec toutes les métadonnées. L'Apple TV bascule votre TV dans le bon mode toute seule.",
+  "e_hdr_text": "HDR10, HDR10+, Dolby Vision et HLG, avec toutes les métadonnées. L'Apple TV bascule votre TV dans le bon mode toute seule, et la Mise à l'échelle améliorée affine la vidéo SD et 720p.",
   "e_dv7_title": "Même le Dolby Vision Profil 7",
   "e_dv7_text": "Les remux Blu-ray en Dolby Vision Profil 7, FEL compris, sont convertis sur l'appareil en Profil 8.1, pour que votre TV affiche toujours du Dolby Vision. Pour le FEL, la luminosité de la couche d'amélioration est intégrée scène par scène, ce qui rapproche nettement l'image du disque.",
   "e_atmos_title": "Dolby Atmos",

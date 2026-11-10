@@ -76,7 +76,7 @@
   "e_direct_title": "Riproduce quasi tutto",
   "e_direct_text": "HEVC, H.264, AV1, VP9, MPEG-2, VC-1 e vecchi file DivX e WMV, in MKV, MP4, AVI, TS e altri, perfino cartelle DVD e Blu-ray. Riprodotti direttamente, senza transcodifica sul server.",
   "e_hdr_title": "Vero HDR",
-  "e_hdr_text": "HDR10, HDR10+, Dolby Vision e HLG, con tutti i metadati. Apple TV porta da sola la TV nella modalità giusta.",
+  "e_hdr_text": "HDR10, HDR10+, Dolby Vision e HLG, con tutti i metadati. Apple TV porta da sola la TV nella modalità giusta, e Upscaling avanzato rende più nitidi i video SD e 720p.",
   "e_dv7_title": "Anche Dolby Vision Profilo 7",
   "e_dv7_text": "I remux Blu-ray con Dolby Vision Profilo 7, FEL incluso, vengono convertiti sul dispositivo in Profilo 8.1, così la TV mostra comunque Dolby Vision. Con FEL, la luminosità dello strato di miglioramento viene integrata scena per scena, e l'immagine si avvicina molto di più al disco.",
   "e_atmos_title": "Dolby Atmos",

@@ -76,7 +76,7 @@
   "e_direct_title": "Afspiller næsten alt",
   "e_direct_text": "HEVC, H.264, AV1, VP9, MPEG-2, VC-1 og gamle DivX- og WMV-filer, i MKV, MP4, AVI, TS og mere, selv DVD- og Blu-ray-mapper. Afspillet direkte, uden transcoding på din server.",
   "e_hdr_title": "Ægte HDR",
-  "e_hdr_text": "HDR10, HDR10+, Dolby Vision og HLG med alle metadata. Apple TV skifter selv dit tv til den rigtige tilstand.",
+  "e_hdr_text": "HDR10, HDR10+, Dolby Vision og HLG med alle metadata. Apple TV skifter selv dit tv til den rigtige tilstand, og Forbedret opskalering gør SD- og 720p-video skarpere.",
   "e_dv7_title": "Også Dolby Vision Profil 7",
   "e_dv7_text": "Blu-ray-remuxer med Dolby Vision Profil 7, inklusive FEL, konverteres på enheden til Profil 8.1, så dit tv stadig viser Dolby Vision. Ved FEL lægges forbedringslagets lysstyrke ind scene for scene, hvilket bringer billedet meget tættere på disken.",
   "e_atmos_title": "Dolby Atmos",

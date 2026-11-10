@@ -76,7 +76,7 @@
   "e_direct_title": "Redă aproape orice",
   "e_direct_text": "HEVC, H.264, AV1, VP9, MPEG-2, VC-1 și fișiere vechi DivX și WMV, în MKV, MP4, AVI, TS și altele, chiar și foldere DVD și Blu-ray. Redate direct, fără transcodare pe serverul tău.",
   "e_hdr_title": "HDR adevărat",
-  "e_hdr_text": "HDR10, HDR10+, Dolby Vision și HLG, cu toate metadatele. Apple TV comută singur televizorul în modul potrivit.",
+  "e_hdr_text": "HDR10, HDR10+, Dolby Vision și HLG, cu toate metadatele. Apple TV comută singur televizorul în modul potrivit, iar Upscaling îmbunătățit clarifică video SD și 720p.",
   "e_dv7_title": "Și Dolby Vision Profile 7",
   "e_dv7_text": "Remuxurile Blu-ray cu Dolby Vision Profile 7, inclusiv FEL, sunt convertite pe dispozitiv în Profile 8.1, așa că televizorul tău afișează în continuare Dolby Vision. Pentru FEL, luminozitatea stratului de îmbunătățire este integrată scenă cu scenă, ceea ce aduce imaginea mult mai aproape de disc.",
   "e_atmos_title": "Dolby Atmos",

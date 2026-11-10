@@ -76,7 +76,7 @@
   "e_direct_title": "ほぼすべてを再生",
   "e_direct_text": "HEVC、H.264、AV1、VP9、MPEG-2、VC-1、そして古いDivXやWMVのファイルを、MKV、MP4、AVI、TSなどで。DVDやBlu-rayのフォルダにも対応。サーバーでトランスコードせず、そのまま再生します。",
   "e_hdr_title": "本物のHDR",
-  "e_hdr_text": "HDR10、HDR10+、Dolby Vision、HLGを、メタデータまで完全に。Apple TVがテレビを対応するモードに自動で切り替えます。",
+  "e_hdr_text": "HDR10、HDR10+、Dolby Vision、HLGを、メタデータまで完全に。Apple TVがテレビを対応するモードに自動で切り替え、高品位アップスケーリングがSDと720pの映像をシャープにします。",
   "e_dv7_title": "Dolby Vision Profile 7にも対応",
   "e_dv7_text": "Dolby Vision Profile 7のBlu-rayリマックスは、FELも含めてデバイス上でProfile 8.1に変換されるので、テレビにはDolby Visionのまま表示されます。FELの場合はエンハンスメントレイヤーの明るさをシーンごとに反映するため、映像はディスクにずっと近づきます。",
   "e_atmos_title": "Dolby Atmos",

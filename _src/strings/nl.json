@@ -76,7 +76,7 @@
   "e_direct_title": "Speelt bijna alles af",
   "e_direct_text": "HEVC, H.264, AV1, VP9, MPEG-2, VC-1 en oude DivX- en WMV-bestanden, in MKV, MP4, AVI, TS en meer, zelfs dvd- en Blu-ray-mappen. Direct afgespeeld, zonder transcoderen op je server.",
   "e_hdr_title": "Echte HDR",
-  "e_hdr_text": "HDR10, HDR10+, Dolby Vision en HLG, met alle metadata. Apple TV zet je tv vanzelf in de juiste modus.",
+  "e_hdr_text": "HDR10, HDR10+, Dolby Vision en HLG, met alle metadata. Apple TV zet je tv vanzelf in de juiste modus, en Verbeterde upscaling maakt SD- en 720p-video scherper.",
   "e_dv7_title": "Ook Dolby Vision Profile 7",
   "e_dv7_text": "Blu-ray-remuxen met Dolby Vision Profile 7, FEL inbegrepen, worden op het apparaat omgezet naar Profile 8.1, zodat je tv nog steeds Dolby Vision toont. Bij FEL wordt de helderheid van de enhancement layer scène voor scène meegenomen, waardoor het beeld veel dichter bij de disc komt.",
   "e_atmos_title": "Dolby Atmos",
