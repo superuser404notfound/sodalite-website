@@ -1,141 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sodalite</title>
-    <meta name="description" content="Native Jellyfin client for Apple TV, iPhone and iPad with built-in Seerr requests. Free on the App Store. Direct Play, real HDR10 / Dolby Vision, real Dolby Atmos, Live TV, music. Open source, no telemetry.">
-    <meta property="og:title" content="Sodalite">
-    <meta property="og:description" content="Your Jellyfin library and Seerr, together on Apple TV, iPhone and iPad. Native, instant playback, real HDR, real Dolby Atmos, lossless height channels.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="logo.png">
-    <link rel="icon" href="logo.png">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sodalite: Jellyfin for Apple TV, iPhone, iPad and Mac</title>
+<meta name="description" content="A free, native Jellyfin app for Apple TV, iPhone, iPad and Mac, with Seerr requests built in. Direct Play, Dolby Vision, Dolby Atmos, lossless height channels, Live TV and music. Open source, no tracking.">
+<link rel="canonical" href="https://sodalite.superuser404.de/">
+<link rel="alternate" hreflang="en" href="https://sodalite.superuser404.de/">
+<link rel="alternate" hreflang="cs" href="https://sodalite.superuser404.de/cs/">
+<link rel="alternate" hreflang="da" href="https://sodalite.superuser404.de/da/">
+<link rel="alternate" hreflang="de" href="https://sodalite.superuser404.de/de/">
+<link rel="alternate" hreflang="el" href="https://sodalite.superuser404.de/el/">
+<link rel="alternate" hreflang="es" href="https://sodalite.superuser404.de/es/">
+<link rel="alternate" hreflang="fi" href="https://sodalite.superuser404.de/fi/">
+<link rel="alternate" hreflang="fr" href="https://sodalite.superuser404.de/fr/">
+<link rel="alternate" hreflang="hr" href="https://sodalite.superuser404.de/hr/">
+<link rel="alternate" hreflang="hu" href="https://sodalite.superuser404.de/hu/">
+<link rel="alternate" hreflang="it" href="https://sodalite.superuser404.de/it/">
+<link rel="alternate" hreflang="ja" href="https://sodalite.superuser404.de/ja/">
+<link rel="alternate" hreflang="ko" href="https://sodalite.superuser404.de/ko/">
+<link rel="alternate" hreflang="nb" href="https://sodalite.superuser404.de/nb/">
+<link rel="alternate" hreflang="nl" href="https://sodalite.superuser404.de/nl/">
+<link rel="alternate" hreflang="pl" href="https://sodalite.superuser404.de/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://sodalite.superuser404.de/pt-br/">
+<link rel="alternate" hreflang="pt-PT" href="https://sodalite.superuser404.de/pt-pt/">
+<link rel="alternate" hreflang="ro" href="https://sodalite.superuser404.de/ro/">
+<link rel="alternate" hreflang="ru" href="https://sodalite.superuser404.de/ru/">
+<link rel="alternate" hreflang="sk" href="https://sodalite.superuser404.de/sk/">
+<link rel="alternate" hreflang="sv" href="https://sodalite.superuser404.de/sv/">
+<link rel="alternate" hreflang="tr" href="https://sodalite.superuser404.de/tr/">
+<link rel="alternate" hreflang="uk" href="https://sodalite.superuser404.de/uk/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sodalite.superuser404.de/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sodalite.superuser404.de/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://sodalite.superuser404.de/">
+<meta property="og:title" content="Sodalite: Jellyfin for Apple TV, iPhone, iPad and Mac">
+<meta property="og:description" content="A free, native Jellyfin app for Apple TV, iPhone, iPad and Mac, with Seerr requests built in. Direct Play, Dolby Vision, Dolby Atmos, lossless height channels, Live TV and music. Open source, no tracking.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sodalite.superuser404.de/">
+<meta property="og:image" content="https://sodalite.superuser404.de/media/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070b1f">
+<meta name="apple-itunes-app" content="app-id=6764418563">
+<link rel="icon" href="/media/icon-64.png">
+<link rel="apple-touch-icon" href="/media/icon-180.png">
+<link rel="stylesheet" href="/style.css?v=92fd5b64">
+<script type="application/json" id="langs">{"codes":["en","cs","da","de","el","es","fi","fr","hr","hu","it","ja","ko","nb","nl","pl","pt-br","pt-pt","ro","ru","sk","sv","tr","uk","zh-hans","zh-hant"],"alias":{"pt":"pt-br","zh":"zh-hans","zh-cn":"zh-hans","zh-sg":"zh-hans","zh-tw":"zh-hant","zh-hk":"zh-hant","zh-mo":"zh-hant","no":"nb","nn":"nb"}}</script>
+<script>
+(function () {
+  var stored = null;
+  try { stored = localStorage.getItem('lang'); } catch (e) {}
+  if (stored) return;
+  var t = JSON.parse(document.getElementById('langs').textContent);
+  var tags = navigator.languages || [navigator.language || ''];
+  for (var i = 0; i < tags.length; i++) {
+    var parts = String(tags[i]).toLowerCase().replace(/_/g, '-').split('-');
+    for (var n = parts.length; n > 0; n--) {
+      var c = parts.slice(0, n).join('-');
+      var hit = t.codes.indexOf(c) >= 0 ? c : t.alias[c];
+      if (hit) { if (hit !== 'en') location.replace('/' + hit + '/'); return; }
+    }
+  }
+})();
+</script>
 </head>
 <body>
-    <main>
-        <header class="hero">
-            <img src="logo.png" alt="Sodalite">
-            <h1>Sodalite</h1>
-            <p class="tagline">Your Jellyfin library and Seerr, together on Apple TV, iPhone and iPad.</p>
-            <div class="cta">
-                <a class="store-badge" href="https://apps.apple.com/app/sodalite/id6764418563"><img src="media/app-store-badge.svg" alt="Download on the App Store"></a>
-                <a class="btn btn-secondary" href="https://github.com/superuser404notfound/Sodalite">View on GitHub</a>
-            </div>
-        </header>
+<a class="skip" href="#main">Skip to content</a>
 
-        <nav>
-            <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a>
-            <a href="https://discord.gg/P7NvpzNqnG">Discord</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="imprint.html">Impressum</a>
-        </nav>
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="brand" href="/"><img src="/media/icon-64.png" alt="" width="32" height="32"><span>Sodalite</span></a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#tour">Tour</a>
+      <a href="#features">Features</a>
+      <a href="#yours">Make it yours</a>
+      <a href="#engine">Picture & sound</a>
+      <a href="#community">Community</a>
+    </nav>
+    <details class="lang">
+      <summary aria-label="Language"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-2.9a15.7 15.7 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8ZM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4ZM4.3 14a8.2 8.2 0 0 1 0-4h3.3a16.5 16.5 0 0 0 0 4H4.3Zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 0 1 5.1 16ZM8 8H5.1a8 8 0 0 1 4.3-3.6C8.8 5.5 8.4 6.7 8 8Zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4Zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4Zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 0 1-4.3 3.6Zm1.8-5.6a16.5 16.5 0 0 0 0-4h3.3a8.2 8.2 0 0 1 0 4h-3.3Z"/></svg><span>English</span></summary>
+      <ul><li><a href="/" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="/cs/" hreflang="cs" lang="cs">Čeština</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/el/" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fi/" hreflang="fi" lang="fi">Suomi</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/hr/" hreflang="hr" lang="hr">Hrvatski</a></li><li><a href="/hu/" hreflang="hu" lang="hu">Magyar</a></li><li><a href="/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/nb/" hreflang="nb" lang="nb">Norsk bokmål</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/pt-pt/" hreflang="pt-PT" lang="pt-PT">Português (Portugal)</a></li><li><a href="/ro/" hreflang="ro" lang="ro">Română</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/sk/" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="/sv/" hreflang="sv" lang="sv">Svenska</a></li><li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/uk/" hreflang="uk" lang="uk">Українська</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul>
+    </details>
+    <a class="btn btn-small" href="https://apps.apple.com/app/sodalite/id6764418563">App Store</a>
+  </div>
+</header>
 
-        <p class="lead">Sodalite is a native media player for your Jellyfin server, one universal app for Apple TV, iPhone and iPad, with first-class Seerr integration so you can browse and request what's missing without ever leaving the app. Built on SwiftUI with a custom video engine underneath: Direct Play for almost every codec your device understands, real HDR and Dolby Atmos, Live TV, and your music library, on the TV in the living room and the phone in your hand.</p>
+<main id="main">
 
-        <section class="shots">
-            <a class="wide" href="media/screenshot-detail.jpg"><img src="media/screenshot-detail.jpg" alt="Detail page: backdrop, ratings, format badges and Play on Apple TV" loading="lazy"></a>
-            <a href="media/screenshot-home.jpg"><img src="media/screenshot-home.jpg" alt="Home: featured hero and Continue Watching" loading="lazy"></a>
-            <a href="media/screenshot-tv.jpg"><img src="media/screenshot-tv.jpg" alt="Live TV: program guide with favorites and categories" loading="lazy"></a>
-            <a href="media/screenshot-catalog.jpg"><img src="media/screenshot-catalog.jpg" alt="Catalog: Seerr Discover with Trending and Upcoming Movies" loading="lazy"></a>
-            <a href="media/screenshot-player.jpg"><img src="media/screenshot-player.jpg" alt="Player: audio track menu on the transport bar" loading="lazy"></a>
-            <a href="media/screenshot-multiview.jpg"><img src="media/screenshot-multiview.jpg" alt="Multiview: four live channels on one screen" loading="lazy"></a>
-            <a href="media/screenshot-request.jpg"><img src="media/screenshot-request.jpg" alt="Seerr: request a missing title" loading="lazy"></a>
-        </section>
+<section class="hero">
+  <div class="wrap">
+    <img class="hero-icon" src="/media/icon-180.png" alt="" width="96" height="96">
+    <p class="kicker">For Jellyfin and Seerr</p>
+    <h1>Your Jellyfin, <em>at its best</em>.</h1>
+    <p class="lead">Sodalite plays your Jellyfin library on Apple TV, iPhone, iPad and Mac. Native, fast, and in the picture and sound quality your files were made in. Request what's missing through Seerr, without leaving the app.</p>
+    <div class="cta">
+      <a class="store" href="https://apps.apple.com/app/sodalite/id6764418563"><img src="/media/app-store-badge.svg" alt="Download on the App Store" width="180" height="60"></a>
+    </div>
+    <p class="fine">Free. One download for all your Apple devices.</p>
+    <p class="fine">Want new versions early? <a href="https://testflight.apple.com/join/nWeQzmBX">Join the TestFlight beta</a>.</p>
+  </div>
+  <div class="wrap hero-shot">
+    <img src="/media/ui/tvos-home.webp" alt="Sodalite Home screen on Apple TV" width="1400" height="788" fetchpriority="high">
+  </div>
+</section>
 
-        <section class="shots shots-mobile">
-            <a href="media/ios-home.jpg"><img src="media/ios-home.jpg" alt="iPhone: Home with Continue Watching in portrait" loading="lazy"></a>
-            <a href="media/ios-detail.jpg"><img src="media/ios-detail.jpg" alt="iPhone: movie detail page" loading="lazy"></a>
-            <a href="media/ipad-home.jpg"><img src="media/ipad-home.jpg" alt="iPad: Home with featured hero and Continue Watching" loading="lazy"></a>
-            <a href="media/ipad-catalog.jpg"><img src="media/ipad-catalog.jpg" alt="iPad: Seerr Catalog with Discover rows" loading="lazy"></a>
-        </section>
+<section id="tour" class="section">
+  <div class="wrap">
+    <h2>See it on every screen</h2>
+    <p class="lead">One app with the same library, the same look and the same player, from the TV in the living room to the phone in your hand.</p>
+  </div>
+  <div class="tour">
+    <input type="radio" name="platform" id="p-tv" checked>
+    <input type="radio" name="platform" id="p-iphone">
+    <input type="radio" name="platform" id="p-ipad">
+    <input type="radio" name="platform" id="p-mac">
+    <div class="wrap">
+      <div class="tabs" role="tablist">
+        <label for="p-tv">Apple TV</label>
+        <label for="p-iphone">iPhone</label>
+        <label for="p-ipad">iPad</label>
+        <label for="p-mac">Mac</label>
+      </div>
+    </div>
+    <div class="strip strip-tv" data-platform="tv"><img src="/media/shots/en/tv-1.webp" alt="Sodalite on Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/en/tv-2.webp" alt="Sodalite on Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/en/tv-3.webp" alt="Sodalite on Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/en/tv-4.webp" alt="Sodalite on Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/en/tv-5.webp" alt="Sodalite on Apple TV" width="1400" height="788" loading="lazy"><img src="/media/shots/en/tv-6.webp" alt="Sodalite on Apple TV" width="1400" height="788" loading="lazy"></div>
+    <div class="strip strip-iphone" data-platform="iphone"><img src="/media/shots/en/iphone-1.webp" alt="Sodalite on iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/en/iphone-2.webp" alt="Sodalite on iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/en/iphone-3.webp" alt="Sodalite on iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/en/iphone-4.webp" alt="Sodalite on iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/en/iphone-5.webp" alt="Sodalite on iPhone" width="480" height="1043" loading="lazy"><img src="/media/shots/en/iphone-6.webp" alt="Sodalite on iPhone" width="480" height="1043" loading="lazy"></div>
+    <div class="strip strip-ipad" data-platform="ipad"><img src="/media/shots/en/ipad-1.webp" alt="Sodalite on iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/en/ipad-2.webp" alt="Sodalite on iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/en/ipad-3.webp" alt="Sodalite on iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/en/ipad-4.webp" alt="Sodalite on iPad" width="1000" height="750" loading="lazy"><img src="/media/shots/en/ipad-5.webp" alt="Sodalite on iPad" width="1000" height="750" loading="lazy"></div>
+    <div class="strip strip-mac" data-platform="mac"><img src="/media/shots/en/mac-1.webp" alt="Sodalite on Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/en/mac-2.webp" alt="Sodalite on Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/en/mac-3.webp" alt="Sodalite on Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/en/mac-4.webp" alt="Sodalite on Mac" width="1200" height="750" loading="lazy"><img src="/media/shots/en/mac-5.webp" alt="Sodalite on Mac" width="1200" height="750" loading="lazy"></div>
+  </div>
+</section>
 
-        <h2>Two services, one app</h2>
-        <p>Sodalite brings Jellyfin and Seerr together in the same UI. Watch what's already on your server, then spot something on a trending row that isn't there yet and request it from inside the app, while Seerr handles the rest. No switching to a phone, no web UI, no pinging your homelab admin. Single sign-on, one focus-driven interface, the full library plus request loop on every Apple screen.</p>
+<section id="features" class="section">
+  <div class="wrap">
+    <h2>Everything on your server, and more</h2>
+    <p class="lead">Sodalite talks to your Jellyfin server directly. Here is what you get.</p>
 
-        <h2>Everything it does</h2>
-        <div class="features">
-            <section class="card">
-                <h3>📚 Browse &amp; discover</h3>
-                <ul>
-                    <li>Multiple Jellyfin servers, switch without logging out</li>
-                    <li>Home rows you can reorder and toggle: Continue Watching, Next Up, per-library Latest, Playlists</li>
-                    <li>Movies, Series and Collections with instant filtering and All / Unwatched / Watched filters</li>
-                    <li>Search across your whole server, results as you type</li>
-                    <li>Rich detail pages: cast, ratings, where-to-watch, more-like-this and full filmographies</li>
-                    <li>Delete titles from the app, with optional Radarr / Sonarr cleanup via Seerr</li>
-                </ul>
-            </section>
+    <div class="feature">
+      <img src="/media/ui/ipad-home.webp" alt="" loading="lazy" width="1000" height="750">
+      <div><h3>Home that fits you</h3><p>Continue Watching, Next Up, the latest additions, favorites, collections and playlists. Show, hide and reorder every row. Run several servers? Home can combine up to five into one.</p></div>
+    </div>
+    <div class="feature flip">
+      <img src="/media/ui/tvos-detail.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Detail pages worth reading</h3><p>Artwork first, the plot on the first screen, ratings from TMDB, IMDb and Rotten Tomatoes, format badges like 4K, Dolby Vision and Atmos, the cast with full filmographies, and every version of a title to choose from.</p></div>
+    </div>
+    <div class="feature">
+      <img src="/media/ui/tvos-player.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>A player made for the remote</h3><p>Frame-exact previews while you scrub, Skip Intro and Skip Recap, the next episode with a countdown, fast forward up to 256x, Picture in Picture, and subtitles in every format, including styled ASS and Blu-ray PGS. Search and download missing subtitles, or show two at once.</p></div>
+    </div>
+    <div class="feature flip">
+      <img src="/media/ui/tvos-livetv.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Live TV and recordings</h3><p>A real program guide with favorites and categories. Pause and rewind live TV, switch channels with the remote, record a show or a whole series, and watch recordings while they are still running.</p></div>
+    </div>
+    <div class="feature">
+      <img src="/media/ui/tvos-catalog.webp" alt="" loading="lazy" width="1400" height="788">
+      <div><h3>Request what's missing</h3><p>Browse trending and upcoming movies and shows through Seerr. Request a movie, a whole series or single seasons, follow the status, and approve requests if you are an admin. One sign-in for both.</p></div>
+    </div>
 
-            <section class="card">
-                <h3>🎬 Watch</h3>
-                <ul>
-                    <li>Direct Play for almost every codec: H.264, HEVC, AV1, VP9, MPEG-2, VC-1 and more, no transcoding</li>
-                    <li>Real HDR10, HDR10+, Dolby Vision and HLG with full metadata and automatic Match Content</li>
-                    <li>Dolby Atmos via EAC3+JOC, plus 5.1 / 7.1 surround with correct channel layout</li>
-                    <li>Lossless height channels from TrueHD and DTS:X, rendered into a 9.1.6 mix and sent to your receiver without lossy compression</li>
-                    <li>Client-side subtitles in every format, including styled ASS and bitmap PGS / DVD tracks</li>
-                    <li>Subtitle search &amp; download and dual subtitles, right from inside the player</li>
-                    <li>On-device scrub previews even without server trickplay, on a hand-built transport bar</li>
-                </ul>
-            </section>
+    <div class="cards">
+      <article class="card"><img src="/media/ui/tvos-multiview.webp" alt="" loading="lazy" width="1400" height="788"><h3>Multiview</h3><p>Watch up to four live channels at once on Apple TV. The sound follows the tile you select, a click makes it full screen.</p></article>
+      <article class="card"><img class="phone" src="/media/ui/iphone-detail.webp" alt="" loading="lazy" width="480" height="1043"><h3>On the go</h3><p>On iPhone and iPad: download movies and whole seasons to watch offline, send a title to a TV with AirPlay, or connect an HDMI adapter. Rotation lock and a child lock sit right in the player.</p></article>
+      <article class="card" data-platform="mac"><img src="/media/ui/mac-home.webp" alt="" loading="lazy" width="1200" height="750"><h3>Native on the Mac</h3><p>A real Mac app, not a port: a sidebar, the player in its own window, full keyboard control, full screen and right-click menus.</p></article>
+      <article class="card text-card"><h3>Your music, too</h3><p>Browse your Jellyfin music by album and play it with a proper Now Playing screen, cover art, scrubbing and playback in the background.</p></article>
+      <article class="card text-card"><h3>Trakt built in</h3><p>Connect Trakt with a code. What you watch is scrobbled, watched status and ratings sync both ways, and your watchlist and lists become Home rows. No server plugin needed.</p></article>
+    </div>
+  </div>
+</section>
 
-            <section class="card">
-                <h3>📺 Live TV &amp; DVR</h3>
-                <ul>
-                    <li>Overview tab plus a full EPG guide with live now-line and channel favorites</li>
-                    <li>Timeshift: pause live TV and scrub back up to 10 minutes</li>
-                    <li>Recordings &amp; timers: record a single show or a whole series from the guide</li>
-                    <li>Most channels play straight from the source, seconds to start, with Jellyfin fallback</li>
-                </ul>
-            </section>
+<section id="yours" class="section alt">
+  <div class="wrap">
+    <h2>Make it yours</h2>
+    <p class="lead">Sodalite has a setting for almost everything, and each profile keeps its own.</p>
+    <div class="settings-strip"><figure><img src="/media/ui/tvos-settings-accent.webp" alt="Sodalite settings on Apple TV: Accent Color" width="1400" height="788" loading="lazy"><figcaption>Accent Color</figcaption></figure><figure><img src="/media/ui/tvos-settings-appearance.webp" alt="Sodalite settings on Apple TV: Appearance" width="1400" height="788" loading="lazy"><figcaption>Appearance</figcaption></figure><figure><img src="/media/ui/tvos-settings-home.webp" alt="Sodalite settings on Apple TV: Customize Home" width="1400" height="788" loading="lazy"><figcaption>Customize Home</figcaption></figure><figure><img src="/media/ui/tvos-settings-controls.webp" alt="Sodalite settings on Apple TV: Player Controls" width="1400" height="788" loading="lazy"><figcaption>Player Controls</figcaption></figure><figure><img src="/media/ui/tvos-settings-playback.webp" alt="Sodalite settings on Apple TV: Playback Settings" width="1400" height="788" loading="lazy"><figcaption>Playback Settings</figcaption></figure><figure><img src="/media/ui/tvos-settings-tabs.webp" alt="Sodalite settings on Apple TV: Tabs" width="1400" height="788" loading="lazy"><figcaption>Tabs</figcaption></figure></div>
+    <div class="grid">
+      <div><h3>Colors and backgrounds</h3><p>Pick an accent color and a Graphite Glass or OLED Black background. Choose card sizes, artwork style, title logos and which badges you want to see.</p></div>
+      <div><h3>Tab bar or sidebar</h3><p>On Apple TV, navigate from the bar at the top or from a sidebar in your accent color. Choose which tabs appear, and pin a library like Movies as a tab of its own.</p></div>
+      <div><h3>Your Home rows</h3><p>Turn rows on and off, put them in your order, and add Recently Released, Upcoming episodes, your favorite episodes or a Latest row per library.</p></div>
+      <div><h3>Your player buttons</h3><p>Hide the player buttons you never use and put the rest in your order. Set the skip interval for each direction, and switch on Stats for Nerds when you want the details.</p></div>
+      <div><h3>Sound for every room</h3><p>Dialogue Boost makes voices clearer, Night Mode keeps loud scenes down at night, and a speaker setting folds surround to stereo or 5.1.</p></div>
+      <div><h3>Subtitles your way</h3><p>Font, size, position and style. Forced subtitles show on their own, and your track choice is remembered for each film and series.</p></div>
+      <div><h3>Profiles and parental controls</h3><p>Switch profiles without a password, each with its own settings. A Guardian PIN locks profiles and settings, and spoiler protection blurs episodes you have not seen yet.</p></div>
+      <div><h3>iCloud Sync</h3><p>Servers, sign-ins and settings follow you to every device on your iCloud account, end-to-end encrypted.</p></div>
+    </div>
+  </div>
+</section>
 
-            <section class="card">
-                <h3>🎵 Listen</h3>
-                <ul>
-                    <li>Browse your Jellyfin music library by album</li>
-                    <li>Native tvOS Now Playing screen with cover art and scrubbing</li>
-                    <li>Same engine as video, played back without transcoding</li>
-                </ul>
-            </section>
+<section id="engine" class="section engine">
+  <div class="wrap">
+    <p class="kicker">Powered by AetherEngine</p>
+    <h2>Picture and sound, <em>as they were mastered</em>.</h2>
+    <p class="lead">Underneath Sodalite runs AetherEngine, our own open source video engine. It plays your files as they are, so your server does not have to convert them, and it keeps what other apps throw away.</p>
+    <div class="grid">
+      <div><h3>Plays nearly everything</h3><p>HEVC, H.264, AV1, VP9, MPEG-2, VC-1 and old DivX and WMV files, in MKV, MP4, AVI, TS and more, even DVD and Blu-ray folders. Played directly, without transcoding on your server.</p></div>
+      <div><h3>Real HDR</h3><p>HDR10, HDR10+, Dolby Vision and HLG, with the full metadata. Apple TV switches your TV to the matching mode on its own.</p></div>
+      <div class="hl"><h3>Dolby Vision Profile 7, too</h3><p>Blu-ray remuxes with Dolby Vision Profile 7, FEL included, are converted on the device to Profile 8.1, so your TV still shows Dolby Vision. For FEL, the brightness of the enhancement layer is folded in scene by scene, which brings the picture much closer to the disc.</p></div>
+      <div><h3>Dolby Atmos</h3><p>Dolby Atmos from Dolby Digital Plus tracks lights up the Atmos sign on your receiver, and plays as Spatial Audio on AirPods.</p></div>
+      <div class="hl"><h3>Lossless height channels</h3><p>Apple TV cannot pass TrueHD or DTS:X on to your receiver, so their height channels usually get lost. AetherEngine keeps them: it renders the track into a 9.1.6 mix and sends it to your receiver over HDMI without lossy compression.</p></div>
+      <div><h3>Every subtitle</h3><p>Text and image subtitles are drawn on the device: SRT, styled ASS, WebVTT, Blu-ray PGS, DVD, DVB and Teletext. Your server does not have to burn them in.</p></div>
+    </div>
+    <p class="more"><a href="https://aetherengine.superuser404.de">Learn more about AetherEngine &rarr;</a></p>
+  </div>
+</section>
 
-            <section class="card">
-                <h3>📨 Request what's missing</h3>
-                <ul>
-                    <li>Browse trending and popular media right inside the app</li>
-                    <li>One-tap requests for movies and full series</li>
-                    <li>Track what's approved, declined or already downloading</li>
-                    <li>Admin view to approve, decline or edit any user's request</li>
-                </ul>
-            </section>
+<section id="platforms" class="section">
+  <div class="wrap">
+    <h2>Runs on</h2>
+    <p class="lead">One free download covers all four. Your servers and settings sync between them through iCloud.</p>
+    <ul class="platforms">
+      <li><strong>Apple TV</strong><span>Apple TV 4K with tvOS 26 or later</span></li>
+      <li><strong>iPhone</strong><span>iOS 26 or later</span></li>
+      <li><strong>iPad</strong><span>iPadOS 26 or later</span></li>
+      <li><strong>Mac</strong><span>macOS 26 or later</span></li>
+    </ul>
+    <p class="fine center">You need a Jellyfin server. Seerr is optional.</p>
+  </div>
+</section>
 
-            <section class="card">
-                <h3>🌍 Personal</h3>
-                <ul>
-                    <li>Parental controls with a Guardian PIN to lock profiles and settings</li>
-                    <li>Watch Stats: totals, completion rate, top genres, most-rewatched titles</li>
-                    <li>26 languages, dark minimal design built for living rooms</li>
-                    <li>Appearance options plus an accent color with the Supporter Pack</li>
-                    <li>Liquid Glass accents on tvOS 26+, fully Siri Remote optimized</li>
-                </ul>
-            </section>
-        </div>
+<section id="community" class="section alt">
+  <div class="wrap">
+    <h2>Open source, and built in the open</h2>
+    <p class="lead">Sodalite is free and its source code is public on GitHub. No ads, no tracking, no analytics. Your sign-ins stay on your devices and in your own iCloud.</p>
+    <div class="cards three">
+      <article class="card text-card"><h3>Found a bug or missing a feature?</h3><p>Tell us on GitHub. Every report is read, and many features in Sodalite started as a request.</p><a class="btn" href="https://github.com/superuser404notfound/Sodalite/issues/new/choose">Report a bug or request a feature</a></article>
+      <article class="card text-card"><h3>Questions and news</h3><p>Join the Discord for quick questions, tips and release news.</p><a class="btn btn-ghost" href="https://discord.gg/P7NvpzNqnG">Join the Discord</a></article>
+      <article class="card text-card"><h3>Read the code</h3><p>Sodalite is GPL-3.0, AetherEngine is LGPL-3.0. Study it, build it yourself, or help make it better.</p><a class="btn btn-ghost" href="https://github.com/superuser404notfound/Sodalite">Sodalite on GitHub</a></article>
+    </div>
+  </div>
+</section>
 
-        <h2>Open source, end to end</h2>
-        <p>Every byte that touches your server is in the open. Your auth tokens stay in the system Keychain, and there's no telemetry, no analytics, no third-party SDK phoning home. Sodalite is licensed under <strong>GPL-3.0</strong>, the underlying video engine <a href="https://github.com/superuser404notfound/AetherEngine">AetherEngine</a> under <strong>LGPL-3.0</strong>, both with an Apple Store / DRM Exception under §7 so App Store distribution stays legally clean. Self-host the server, self-build the client, the whole loop is yours.</p>
+<section class="section final">
+  <div class="wrap">
+    <img src="/media/icon-180.png" alt="" width="80" height="80" loading="lazy">
+    <h2>Ready to watch?</h2>
+    <p class="lead">Get Sodalite for free on the App Store.</p>
+    <a class="store" href="https://apps.apple.com/app/sodalite/id6764418563"><img src="/media/app-store-badge.svg" alt="Download on the App Store" width="180" height="60" loading="lazy"></a>
+    <p class="fine">Want new versions early? <a href="https://testflight.apple.com/join/nWeQzmBX">Join the TestFlight beta</a>.</p>
+  </div>
+</section>
 
-        <h2>Status &amp; requirements</h2>
-        <p>Sodalite is <a href="https://apps.apple.com/app/sodalite/id6764418563">available on the App Store</a>, free, as one universal app for Apple TV, iPhone and iPad. Upcoming versions are tested in the public <a href="https://testflight.apple.com/join/nWeQzmBX">TestFlight beta</a> first. Source on <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a>.</p>
-        <ul>
-            <li><strong>Apple TV 4K</strong> (any generation), <strong>tvOS 26.0</strong> or later</li>
-            <li><strong>iPhone</strong> with <strong>iOS 26.0</strong> or later, <strong>iPad</strong> with <strong>iPadOS 26.0</strong> or later</li>
-            <li><strong>Jellyfin server</strong> 10.9+ recommended</li>
-            <li><strong>Seerr</strong> 2.0+ (optional, for browse &amp; request)</li>
-        </ul>
+</main>
 
-        <footer>
-            <p>&copy; 2026 Vincent Herbst &middot; <a href="privacy.html">Privacy</a> &middot; <a href="imprint.html">Impressum</a> &middot; <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a></p>
-        </footer>
-    </main>
+<footer class="foot">
+  <div class="wrap">
+    <nav>
+      <a href="/privacy">Privacy</a>
+      <a href="/imprint.html">Legal notice</a>
+      <a href="https://github.com/superuser404notfound/Sodalite">GitHub</a>
+      <a href="https://discord.gg/P7NvpzNqnG">Discord</a>
+    </nav>
+    <p>Sodalite is not affiliated with or endorsed by Jellyfin, Seerr or Trakt. Apple TV, iPhone, iPad and Mac are trademarks of Apple Inc. Dolby, Dolby Vision and Dolby Atmos are trademarks of Dolby Laboratories.</p>
+    <p>&copy; 2026 Vincent Herbst</p>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.lang a[hreflang]').forEach(function (a) {
+  a.addEventListener('click', function () { try { localStorage.setItem('lang', a.getAttribute('hreflang')); } catch (e) {} });
+});
+</script>
 </body>
 </html>
