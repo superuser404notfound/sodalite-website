@@ -11,7 +11,7 @@
         <header>
             <img src="logo.png" alt="Sodalite">
             <h1>Privacy Policy</h1>
-            <p class="tagline">Sodalite does not collect, transmit, or share any personal data.</p>
+            <p class="tagline">Sodalite does not collect any personal data. It only talks to the services you connect.</p>
         </header>
 
         <nav>
@@ -28,14 +28,15 @@
 
         <section id="en">
             <h2>English</h2>
-            <p class="muted">Last updated: 26 September 2026</p>
+            <p class="muted">Last updated: 10 November 2026</p>
 
             <h3>Summary</h3>
-            <p>Sodalite is a self-hosted media player. It connects only to <strong>servers you choose</strong> (your Jellyfin server, optionally a Seerr instance). It contains <strong>no analytics, no telemetry, no advertising, and no third-party SDKs</strong>. The developer never sees, receives, or has access to any data about your usage.</p>
+            <p>Sodalite is a self-hosted media player. It connects only to <strong>servers you choose</strong> (your Jellyfin server, optionally a Seerr instance) and, only if you connect your account, <strong>Trakt</strong>. It contains <strong>no analytics, no telemetry, no advertising, and no third-party SDKs</strong>. The developer never sees, receives, or has access to any data about your usage.</p>
 
             <h3>What the app stores on your device</h3>
             <ul>
                 <li><strong>Server credentials</strong> (Jellyfin / Seerr URL, access token, session cookie, optionally your password) in the system <strong>Keychain</strong>. Used to keep you signed in across restarts.</li>
+                <li><strong>Trakt sign-in</strong> (access and refresh token, your Trakt username), only if you connect Trakt, in the system <strong>Keychain</strong> of that one device, plus a local cache of your Trakt history and lists. Neither is synced through iCloud. Disconnecting in Settings removes it and signs the app out at Trakt.</li>
                 <li><strong>Settings</strong> (playback, appearance, home rows, parental controls, etc.) in <strong>UserDefaults</strong>.</li>
                 <li><strong>Image cache</strong> (posters, backdrops downloaded from your Jellyfin server) in the app's local cache directory. Cleared by the system when storage is low or when you uninstall the app.</li>
                 <li><strong>Diagnostic log</strong> kept in memory and, only if you turn it on, in a local file. It never leaves the device unless you export or copy it yourself.</li>
@@ -47,8 +48,9 @@
                 <li>HTTPS / HTTP requests to your <strong>Jellyfin server</strong> (login, library listings, playback info, media segments, session reports).</li>
                 <li>HTTPS / HTTP requests to your optional <strong>Seerr server</strong> (browse, request, status).</li>
                 <li>Image downloads from those same servers.</li>
+                <li>Only if you connect Trakt: HTTPS requests to <strong>Trakt</strong> (api.trakt.tv). Sodalite sends what you play while you play it (scrobbling), the movies and episodes you have watched, your ratings, and changes to your Trakt watchlist. It reads your watch history, ratings, paused positions, watchlist and lists back, and loads poster images for those lists. Titles are identified by public ids (IMDb, TMDB, TVDB), never by anything from your server. Each sync can be turned off separately in Settings.</li>
             </ul>
-            <p>No data is sent to the developer or any third party. There are no analytics endpoints, no crash reporting services, no advertising networks.</p>
+            <p>No data is sent to the developer. Nothing is sent to a third party except Trakt, and only after you connect it. There are no analytics endpoints, no crash reporting services, no advertising networks.</p>
 
             <h3>iCloud sync</h3>
             <p>If iCloud sync is on (it can be turned off in Settings), your <strong>servers, sign-in data and settings</strong> are stored in your <strong>private iCloud database</strong> so your other devices can use them. That database belongs to your Apple Account and is operated by Apple; the developer cannot read it.</p>
@@ -59,6 +61,7 @@
             <h3>Third-party services</h3>
             <p>Sodalite does not use any third-party analytics, crash reporting, advertising, or tracking SDKs.</p>
             <p>The <strong>Jellyfin and Seerr servers</strong> you connect to are operated by you or by whoever you choose to trust. They are outside the scope of this policy. Refer to the privacy policy of those server operators if you connect to a third-party instance.</p>
+            <p><strong>Trakt</strong> is an independent service. What Sodalite sends there is stored in your Trakt account and handled under <a href="https://app.trakt.tv/privacy">Trakt's privacy policy</a>. Sodalite uses Trakt but is not endorsed or certified by Trakt.</p>
 
             <h3>Children</h3>
             <p>Sodalite does not collect personal data from anyone, including children.</p>
@@ -74,14 +77,15 @@
 
         <section id="de">
             <h2>Deutsch</h2>
-            <p class="muted">Zuletzt aktualisiert: 26. September 2026</p>
+            <p class="muted">Zuletzt aktualisiert: 10. November 2026</p>
 
             <h3>Zusammenfassung</h3>
-            <p>Sodalite ist ein selbstgehosteter Media-Player. Die App verbindet sich ausschließlich mit <strong>Servern, die du selbst auswählst</strong> (deinem Jellyfin-Server, optional einer Seerr-Instanz). Sie enthält <strong>keine Analytik, keine Telemetrie, keine Werbung und keine Drittanbieter-SDKs</strong>. Der Entwickler sieht, erhält oder hat keinen Zugriff auf irgendwelche Daten über deine Nutzung.</p>
+            <p>Sodalite ist ein selbstgehosteter Media-Player. Die App verbindet sich ausschließlich mit <strong>Servern, die du selbst auswählst</strong> (deinem Jellyfin-Server, optional einer Seerr-Instanz) und, nur wenn du dein Konto verbindest, mit <strong>Trakt</strong>. Sie enthält <strong>keine Analytik, keine Telemetrie, keine Werbung und keine Drittanbieter-SDKs</strong>. Der Entwickler sieht, erhält oder hat keinen Zugriff auf irgendwelche Daten über deine Nutzung.</p>
 
             <h3>Was die App lokal auf deinem Gerät speichert</h3>
             <ul>
                 <li><strong>Server-Anmeldedaten</strong> (Jellyfin/Seerr-URL, Access-Token, Session-Cookie, optional dein Passwort) im System-<strong>Keychain</strong>. Damit bleibst du nach einem Neustart eingeloggt.</li>
+                <li><strong>Trakt-Anmeldung</strong> (Access- und Refresh-Token, dein Trakt-Benutzername), nur wenn du Trakt verbindest, im System-<strong>Keychain</strong> genau dieses Geräts, dazu ein lokaler Cache deines Trakt-Verlaufs und deiner Listen. Beides wird nie über iCloud synchronisiert. Trennst du die Verbindung in den Einstellungen, wird sie gelöscht und die App bei Trakt abgemeldet.</li>
                 <li><strong>Einstellungen</strong> (Wiedergabe, Darstellung, Startseiten-Reihen, Kindersicherung usw.) in den <strong>UserDefaults</strong>.</li>
                 <li><strong>Bild-Cache</strong> (Poster und Backdrops, die von deinem Jellyfin-Server geladen wurden) im lokalen Cache-Verzeichnis der App. Wird vom System bei knappem Speicher geleert oder beim Deinstallieren der App.</li>
                 <li><strong>Diagnoseprotokoll</strong> im Arbeitsspeicher und, nur wenn du es einschaltest, in einer lokalen Datei. Es verlässt das Gerät nur, wenn du es selbst exportierst oder kopierst.</li>
@@ -93,8 +97,9 @@
                 <li>HTTPS-/HTTP-Anfragen an deinen <strong>Jellyfin-Server</strong> (Login, Bibliotheks-Listen, Playback-Infos, Media-Segmente, Session-Berichte).</li>
                 <li>HTTPS-/HTTP-Anfragen an deinen optionalen <strong>Seerr-Server</strong> (Browse, Request, Status).</li>
                 <li>Bild-Downloads von eben diesen Servern.</li>
+                <li>Nur wenn du Trakt verbindest: HTTPS-Anfragen an <strong>Trakt</strong> (api.trakt.tv). Sodalite sendet, was du gerade abspielst (Scrobbling), die Filme und Folgen, die du gesehen hast, deine Bewertungen und Änderungen an deiner Trakt-Watchlist. Zurück liest die App deinen Verlauf, deine Bewertungen, pausierte Stellen, deine Watchlist und Listen, dazu Posterbilder für diese Listen. Titel werden über öffentliche IDs erkannt (IMDb, TMDB, TVDB), nie über etwas von deinem Server. Jeder Abgleich lässt sich in den Einstellungen einzeln abschalten.</li>
             </ul>
-            <p>Es werden keine Daten an den Entwickler oder Dritte gesendet. Es gibt keine Analytik-Endpoints, keine Crash-Reporting-Dienste, keine Werbenetzwerke.</p>
+            <p>Es werden keine Daten an den Entwickler gesendet. An Dritte geht nichts außer an Trakt, und das erst, wenn du es verbindest. Es gibt keine Analytik-Endpoints, keine Crash-Reporting-Dienste, keine Werbenetzwerke.</p>
 
             <h3>iCloud-Sync</h3>
             <p>Ist der iCloud-Sync an (in den Einstellungen abschaltbar), werden deine <strong>Server, Anmeldedaten und Einstellungen</strong> in deiner <strong>privaten iCloud-Datenbank</strong> gespeichert, damit deine anderen Geräte sie nutzen können. Diese Datenbank gehört zu deinem Apple Account und wird von Apple betrieben; der Entwickler kann sie nicht lesen.</p>
@@ -105,6 +110,7 @@
             <h3>Drittanbieter-Dienste</h3>
             <p>Sodalite nutzt keine Drittanbieter-SDKs für Analytik, Crash-Reporting, Werbung oder Tracking.</p>
             <p>Die <strong>Jellyfin- und Seerr-Server</strong>, mit denen du dich verbindest, werden von dir oder einer Person betrieben, der du vertraust. Sie liegen außerhalb dieser Datenschutzerklärung. Wenn du dich mit einer Drittanbieter-Instanz verbindest, beachte die Datenschutzerklärung des jeweiligen Betreibers.</p>
+            <p><strong>Trakt</strong> ist ein unabhängiger Dienst. Was Sodalite dorthin sendet, liegt in deinem Trakt-Konto und unterliegt der <a href="https://app.trakt.tv/privacy">Datenschutzerklärung von Trakt</a>. Sodalite nutzt Trakt, wird von Trakt aber weder unterstützt noch zertifiziert.</p>
 
             <h3>Kinder</h3>
             <p>Sodalite erhebt keine personenbezogenen Daten, von niemandem, auch nicht von Kindern.</p>
